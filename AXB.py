@@ -1209,9 +1209,8 @@ def xerx():
     elif sial =='4':xerx4()
     elif sial =='5':xerx5()
     elif sial =='6':xerx6()
-    elif sial =='7':#os.system("xdg-open https://www.facebook.com/asial.chaudhary69")
     else:
-        print('SELECT CORRECT OPTION')
+        print("SELECT CORRECT OPTION")
         xerx()
     
 def xerx1():
