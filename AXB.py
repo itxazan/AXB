@@ -922,7 +922,10 @@ def rcrack(uid,pwx,tl):
     except:
         pass 
 
-Main()
+
+#---------------------[END MENU]---------------------#
+if __name__ == '__main__':
+    main()
 
 
 
