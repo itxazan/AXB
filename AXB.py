@@ -485,7 +485,7 @@ class Main:
 		xx = 999999999
 		idx = "100000" 
 os.system("xdg-open https://youtube.com/channel/UCJ7hUIGcUfUZr9DU67X8Jyw");print(logo)
-		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50000: "))
+		limit = input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50000: ")
 		try:
 			for n in range(limit):
 				_ = random.randint(x,xx)
