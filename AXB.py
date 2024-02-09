@@ -1294,4 +1294,4 @@ class Main:
 				continue
 
 		self.loop +=1     
-Menu()
+Main()
