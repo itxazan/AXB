@@ -662,6 +662,7 @@ def YounisXyz(uid,pwx,tl):
         sys.stdout.flush()
     except:
         pass
+Menu
 
 
 
@@ -670,12 +671,3 @@ def YounisXyz(uid,pwx,tl):
 
 
 
-
-###----------------[THE - END]----------------###
-
-
-
-if __name__ == '__main__':
-    os.system('git pull')
-    RANDOM_MENU()
-    
