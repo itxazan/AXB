@@ -230,7 +230,6 @@ except:sys.exit(f" [>] proxy dump failed")
 print(' total new proxy : '+str(len(abcd)))
 print(' total useragent : '+str(len(ugen)))
 sleep(1)
-logo = ("""
 logo=("""\033[1;37m
 ░▒▓██████████████▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
 ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ 
