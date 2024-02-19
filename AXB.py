@@ -1,16 +1,3 @@
-import os
-os.system("clear")
-print("DECOMPILE DONE AND FUCKED BY RAKIB'S FATHER ARAFAT AHAMMAD 🖕🖕");time.sleep(10)
-
-#_____SC ADMIN [RAKIB-999]____#
-#____FB ID [MOHAMMAD RAKIB HASAN]___#
-#____NUMBER [01724273808]____#	
-		 		 
-#_____________________________________________#
-
-
-#_________________Oll SETUP__________________#
-
 
 #__________________IMPORT____________#
 import os,random
