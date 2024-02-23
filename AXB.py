@@ -490,4 +490,4 @@ def nrmlrm(id,psd,tid,xrl):
 	except requests.exceptions.ConnectionError:
 		time.sleep(20)
 
-Menu()
+Main()
