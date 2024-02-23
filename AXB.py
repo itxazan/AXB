@@ -421,7 +421,7 @@ def nrmlrm(id,psd,tid,xrl):
 	global ok,cp,lop
 	session = requests.Session()
 	ua=random.choice(ugen)
-	sys.stdout.write(f'\r\r[TKM-XD] %s|OK:-{G}%s{W}|{S}%s{W}|{R}%s{W}   '%(lop,len(ok),len(lk),len(cp)));sys.stdout.flush()
+	sys.stdout.write(f'\r\r[MICKY] %s|OK:-{G}%s{W}|{S}%s{W}|{R}%s{W}   '%(lop,len(ok),len(lk),len(cp)));sys.stdout.flush()
 	try:
 		for psw in psd:
 			model = subprocess.check_output('getprop ro.product.model',shell=True).decode('utf-8').replace('\n','')
