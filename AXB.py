@@ -181,15 +181,13 @@ agents = ['Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/60
 "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.5624.206 Safari/537.36 OPR/97.0.3248.58",]  
 #__________________| LOGO |__________________#
 logo=(f"""
- \033[1;32m .88b  d88. d888888b  .o88b. db   dD db    db 
- \033[1;32m 88'YbdP`88   `88'   d8P  Y8 88 ,8P' `8b  d8' 
+ \033[1;92m .88b  d88. d888888b  .o88b. db   dD db    db 
+ \033[1;92m 88'YbdP`88   `88'   d8P  Y8 88 ,8P' `8b  d8' 
  \033[1;32m 88  88  88    88    8P      88,8P    `8bd8'  
  \033[1;32m 88  88  88    88    8b      88`8b      88    
- \033[1;32m 88  88  88   .88.   Y8b  d8 88 `88.    88    
- \033[1;32m YP  YP  YP Y888888P  `Y88P' YP   YD    YP            
-
+ \033[1;92m 88  88  88   .88.   Y8b  d8 88 `88.    88    
+ \033[1;92m YP  YP  YP Y888888P  `Y88P' YP   YD    YP            
 \x1b[1;92m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
 \033[1;32m[\033[1;31m✓\033[1;32m] Author     : M I C K Y
 \033[1;32m[\033[1;31m✓\033[1;32m] GitHub     : https://github.com/PRIVATE 
 \033[1;32m[\033[1;31m✓\033[1;32m] Facebook.  : __Micky
@@ -210,7 +208,7 @@ def menu():
                         linex()
                         xd=input(f'{G}[{A}?{G}]{A} CHOICE : ')
                         if xd in ['1','01']:
-                                clear();print(f'\033[1;32m[\033[1;31m✓\033[1;32m] EXAMPLE : /sdcard/Hats.txt ');linex()
+                                clear();print(f'\033[1;32m[\033[1;31m✓\033[1;32m] EXAMPLE : /sdcard/MICKY.txt ');linex()
                                 file = input(f'{G}[{A}?{G}]{G} FILE NAME : ')
                                 try:
                                         fo = open(file,'r').read().splitlines()
